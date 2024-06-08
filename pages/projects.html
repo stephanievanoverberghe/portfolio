@@ -1,0 +1,1048 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Préchargement des polices Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Chargement des icônes FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/33a775bcdb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../src/output.css" />
+    <title>Portfolio - Vanoverberghe Stéphanie</title>
+  </head>
+
+  <body class="bg-red-pink-50 text-red-pink-950">
+    <div class="flex flex-col bg-red-pink-100">
+      <!-- HEADER DESKTOP AND TABLETTE -->
+      <header
+        class="hidden items-center justify-between rounded-full bg-red-pink-50 shadow-light-pressed sm:m-4 sm:flex"
+      >
+        <div class="cursor-pointer">
+          <a href="./../index.html" title="Accueil">
+            <!-- Logo clair -->
+            <img
+              src="../src/assets/img/logo-light.png"
+              alt="Logo du portfolio"
+              class="ml-6 h-14"
+            />
+          </a>
+        </div>
+        <!-- Navigation principale -->
+        <nav class="hidden lg:block">
+          <ul class="flex items-center gap-6">
+            <!-- Liens de navigation avec effets visuels -->
+            <li
+              class="group transform cursor-pointer rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 font-bold shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed"
+            >
+              <a
+                href="../index.html"
+                class="block h-full w-full transform px-8 py-2 transition-transform duration-300 ease-in-out group-hover:scale-90"
+              >
+                A propos
+              </a>
+            </li>
+            <li
+              class="group transform cursor-pointer rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 font-bold text-red-pink-600 shadow-light-pressed transition-transform duration-300 ease-in-out hover:scale-95"
+            >
+              <a
+                href="../pages/projects.html"
+                class="block h-full w-full transform px-8 py-2 transition-transform duration-300 ease-in-out group-hover:scale-90"
+              >
+                Projets
+              </a>
+            </li>
+            <li
+              class="group transform cursor-pointer rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 font-bold shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed"
+            >
+              <a
+                href="../index.html"
+                class="block h-full w-full transform px-8 py-2 transition-transform duration-300 ease-in-out group-hover:scale-90"
+              >
+                Compétences
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Composants à droite du header -->
+        <div class="flex items-center gap-6">
+          <!-- Bouton du menu hamburger pour mobile -->
+          <div class="block lg:hidden">
+            <button
+              class="mx-4 flex h-10 w-10 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default"
+            >
+              <i class="fa-solid fa-bars fa-xl"></i>
+            </button>
+          </div>
+          <!-- Lien vers la page de contact -->
+          <a
+            href="#contact"
+            class="hidden h-[68px] rounded-e-full bg-red-pink-50 p-5 shadow-light-default transition-shadow duration-300 ease-in-out hover:shadow-light-pressed lg:block"
+          >
+            Me contacter
+          </a>
+        </div>
+      </header>
+      <!-- HEADER MOBILE -->
+      <header
+        class="fixed bottom-0 z-50 flex w-full items-center justify-around border-t-[1px] border-red-pink-100 bg-red-pink-50 p-3.5 shadow-shadow-header sm:hidden"
+      >
+        <!-- Icônes pour la navigation mobile -->
+        <div class="flex flex-col items-center justify-center">
+          <a
+            href="index.html"
+            class="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-3 shadow-light-default"
+          >
+            <i class="fa-solid fa-house"> </i>
+          </a>
+          <span class="mt-2 text-xs">Accueil</span>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <a
+            href="pages/projects.html"
+            class="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-3 shadow-light-default"
+          >
+            <i class="fa-solid fa-diagram-project"></i>
+          </a>
+          <span class="mt-2 text-xs">Projets</span>
+        </div>
+
+        <div class="flex flex-col items-center justify-center">
+          <a
+            href="#contact"
+            class="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-3 shadow-light-default"
+          >
+            <i class="fa-solid fa-address-card"></i>
+          </a>
+          <span class="mt-2 text-xs">Contact</span>
+        </div>
+      </header>
+      <!-- SECTION HERO -->
+      <section
+        class="mx-3 items-center justify-center sm:mx-6 md:mx-10 md:mt-5 lg:flex"
+      >
+        <!-- Image hero pour mobile -->
+        <div
+          class="flex h-64 items-center justify-center rounded-b-[50px] bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default sm:hidden"
+        >
+          <img
+            class="max-w-60 rounded-[42px] bg-gradient-to-br from-red-pink-100 to-red-pink-50 pt-10 shadow-light-default"
+            src="../src/assets/img/infographie-03.png"
+            alt=""
+          />
+        </div>
+        <!-- Texte de présentation -->
+        <div class="my-16 flex flex-col items-center justify-center">
+          <span
+            class="text-center text-xs uppercase tracking-[3px] text-red-pink-900 md:text-sm"
+            >Visiter tous mes projets les plus significatifs</span
+          >
+          <h1
+            class="mb-4 mt-5 text-center font-Patua text-2xl md:mb-10 md:mt-7 md:text-4xl lg:text-start"
+          >
+            Mon
+            <span class="text-red-pink-600 dark:text-red-pink-400"
+              >Portfolio</span
+            >
+          </h1>
+          <div class="gap-5 sm:grid sm:grid-cols-3">
+            <a href="project.html">
+              <div
+                class="relative overflow-hidden rounded-lg shadow-light-default sm:h-64 lg:h-96"
+              >
+                <img
+                  src="../../src/assets/img/mockup-formations-dessin-light.jpg"
+                  alt=""
+                  class="h-full w-full object-cover"
+                />
+
+                <div
+                  class="absolute inset-0 bg-red-pink-300 opacity-25 dark:bg-red-pink-700"
+                ></div>
+              </div>
+            </a>
+            <a href="project.html">
+              <div
+                class="relative hidden h-64 overflow-hidden rounded-lg shadow-light-default sm:block lg:h-96"
+              >
+                <img
+                  src="../../src/assets/img/mockup-immo-prestige-light.jpg"
+                  alt=""
+                  class="h-full w-full object-cover"
+                />
+
+                <div
+                  class="absolute inset-0 bg-red-pink-300 opacity-25 dark:bg-red-pink-700"
+                ></div>
+              </div>
+            </a>
+            <a href="project.html">
+              <div
+                class="relative hidden h-64 overflow-hidden rounded-lg shadow-light-default sm:block lg:h-96"
+              >
+                <img
+                  src="../../src/assets/img/mockup-mysteres-a-la-carte-light.png"
+                  alt=""
+                  class="h-full w-full object-cover"
+                />
+
+                <div class="absolute inset-0 bg-red-pink-300 opacity-25"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <main
+      class="mx-3 flex flex-col items-center justify-center sm:mx-6 md:mx-10"
+    >
+      <section class="my-16">
+        <form class="lg:mb-16">
+          <div
+            class="flex flex-col lg:flex-row lg:items-center lg:justify-center lg:gap-5"
+          >
+            <span
+              class="mb-5 text-center text-xs font-semibold uppercase tracking-[1px] text-red-pink-900 md:text-sm lg:mb-0 lg:text-left lg:text-base"
+            >
+              Filtres
+            </span>
+            <div class="mb-10 grid grid-cols-1 gap-4 sm:grid-cols-3 lg:mb-0">
+              <div>
+                <label for="categories"></label>
+                <select
+                  name="categories"
+                  id="categories"
+                  class="w-full rounded-md border-none bg-red-pink-100 text-xs font-bold shadow-light-default md:text-sm lg:cursor-pointer lg:text-base"
+                >
+                  <option value="">-- Catégories --</option>
+                  <option value="web" selected>Développement web</option>
+                  <option value="uiux">UI/UX design</option>
+                  <option value="ecommerce">E-commerce</option>
+                  <option value="elearning">E-learning</option>
+                </select>
+              </div>
+              <div>
+                <label for="languages"></label>
+                <select
+                  name="languages"
+                  id="languages"
+                  class="w-full rounded-md border-none bg-red-pink-100 text-xs font-bold shadow-light-default md:text-sm lg:cursor-pointer lg:text-base"
+                >
+                  <option value="">-- Langages --</option>
+                  <option value="">Tailwind</option>
+                  <option value="">Bootstrap</option>
+                  <option value="">JavaScript</option>
+                  <option value="">React</option>
+                </select>
+              </div>
+              <div>
+                <label for="sort"></label>
+                <select
+                  name="sort"
+                  id="sort"
+                  class="w-full rounded-md border-none bg-red-pink-100 text-xs font-bold shadow-light-default md:text-sm lg:cursor-pointer lg:text-base"
+                >
+                  <option value="">-- Tri --</option>
+                  <option value="">Le plus récent</option>
+                  <option value="">Le plus ancien</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="flex flex-col items-center justify-center">
+          <div>
+            <h2
+              class="mb-5 text-center font-Patua text-lg text-red-pink-600 sm:mb-10 md:text-2xl"
+            >
+              Développement web
+            </h2>
+            <p class="mb-6 text-sm md:mb-11 md:mt-7 md:text-base">
+              Projets où j'ai travaillé sur l'interface utilisateur, en
+              utilisant des technologies comme HTML, CSS, JavaScript ou React.
+            </p>
+          </div>
+          <!-- Articles décrivant les projets réalisés -->
+          <div
+            class="flex auto-rows-fr flex-col gap-8 sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+          >
+            <!-- PROJECT 1 -->
+            <a href="project.html">
+              <article
+                class="group relative flex h-96 flex-col justify-between overflow-hidden rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default"
+              >
+                <div class="relative h-full overflow-hidden rounded-lg">
+                  <img
+                    src="../../src/assets/img/mockup-formations-dessin-light.jpg"
+                    alt=""
+                    class="h-full w-full object-cover"
+                  />
+                  <div
+                    class="absolute inset-0 bg-red-pink-300 opacity-25"
+                  ></div>
+                </div>
+                <div
+                  class="absolute inset-0 flex flex-col justify-between lg:translate-y-full lg:transform lg:transition-transform lg:duration-500 lg:group-hover:translate-y-0"
+                >
+                  <div
+                    class="flex h-32 items-center justify-center rounded-t-lg"
+                  >
+                    <div class="rounded-lg bg-red-pink-50">
+                      <h3 class="p-5 font-Patua text-base md:text-lg">
+                        Formations Dessin
+                      </h3>
+                    </div>
+                  </div>
+                  <div
+                    class="rounded-b-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default"
+                  >
+                    <h4
+                      class="font-Patua text-sm uppercase tracking-[1px] text-red-pink-600 md:text-base"
+                    >
+                      Développement
+                    </h4>
+                    <p class="mb-5 mt-3 text-sm leading-relaxed md:text-base">
+                      Création d’un site web sur l’apprentissage du dessin.
+                      Réalisation de A à Z, de la gestion de projet à la
+                      création de la base de données.
+                    </p>
+                    <div class="flex gap-4 md:gap-6">
+                      <div
+                        class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+                      >
+                        <img
+                          class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                          src="../../src/assets/img/figma.png"
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+                      >
+                        <img
+                          class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                          src="../../src/assets/img/javascript.png"
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+                      >
+                        <img
+                          class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                          src="../../src/assets/img/php.png"
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+                      >
+                        <img
+                          class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                          src="../../src/assets/img/sql.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </a>
+            <!-- PROJECT 2 -->
+            <a href="project.html">
+              <article
+                class="group relative flex h-96 flex-col justify-between overflow-hidden rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default"
+              >
+                <div class="relative h-full overflow-hidden rounded-lg">
+                  <img
+                    src="../../src/assets/img/mockup-immo-prestige-light.jpg"
+                    alt=""
+                    class="h-full w-full object-cover"
+                  />
+
+                  <div
+                    class="0 absolute inset-0 bg-red-pink-300 opacity-25"
+                  ></div>
+                </div>
+                <div
+                  class="absolute inset-0 flex flex-col justify-between transition-transform duration-500 lg:translate-y-full lg:transform lg:group-hover:translate-y-0"
+                >
+                  <div
+                    class="flex h-32 items-center justify-center rounded-t-lg"
+                  >
+                    <div class="rounded-lg bg-red-pink-50">
+                      <h3 class="p-5 font-Patua text-base md:text-lg">
+                        Immo Prestige
+                      </h3>
+                    </div>
+                  </div>
+                  <div
+                    class="rounded-b-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default"
+                  >
+                    <h4
+                      class="font-Patua text-sm uppercase tracking-[1px] text-red-pink-600 md:text-base"
+                    >
+                      Développement
+                    </h4>
+                    <p class="mb-5 mt-3 text-sm leading-relaxed md:text-base">
+                      Création d’un site web sur l’apprentissage du dessin.
+                      Réalisation de A à Z, de la gestion de projet à la
+                      création de la base de données.
+                    </p>
+                    <div class="flex gap-4 md:gap-6">
+                      <div
+                        class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+                      >
+                        <img
+                          class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                          src="../../src/assets/img/figma.png"
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+                      >
+                        <img
+                          class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                          src="../../src/assets/img/react.png"
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+                      >
+                        <img
+                          class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                          src="../../src/assets/img/redux.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </a>
+            <!-- PROJECT 3 -->
+            <a href="project.html">
+              <article
+                class="group relative flex h-96 flex-col justify-between overflow-hidden rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default"
+              >
+                <div class="relative h-full overflow-hidden rounded-lg">
+                  <img
+                    src="../../src/assets/img/mockup-norel-art-light.jpg"
+                    alt=""
+                    class="h-full w-full object-cover"
+                  />
+
+                  <div
+                    class="absolute inset-0 bg-red-pink-300 opacity-25"
+                  ></div>
+                </div>
+                <div
+                  class="absolute inset-0 flex flex-col justify-between transition-transform duration-500 lg:translate-y-full lg:transform lg:group-hover:translate-y-0"
+                >
+                  <div
+                    class="flex h-32 items-center justify-center rounded-t-lg"
+                  >
+                    <div class="rounded-lg bg-red-pink-50">
+                      <h3 class="p-5 font-Patua text-base md:text-lg">
+                        Norel Art
+                      </h3>
+                    </div>
+                  </div>
+                  <div
+                    class="rounded-b-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default"
+                  >
+                    <h4
+                      class="font-Patua text-sm uppercase tracking-[1px] text-red-pink-600 md:text-base"
+                    >
+                      UX/UI design
+                    </h4>
+                    <p class="mb-5 mt-3 text-sm leading-relaxed md:text-base">
+                      Création des maquettes entièrement responsives.
+                      Réalisation de A à Z, de la gestion de projet à la
+                      conception des maquettes.
+                    </p>
+                    <div class="flex gap-4 md:gap-6">
+                      <div
+                        class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+                      >
+                        <img
+                          class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                          src="../../src/assets/img/figma.png"
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+                      >
+                        <img
+                          class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                          src="../../src/assets/img/photoshop.png"
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+                      >
+                        <img
+                          class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                          src="../../src/assets/img/illustrator.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </a>
+            <!-- PROJECT 4 -->
+            <a href="project.html" class="hidden sm:block">
+              <article
+                class="group relative flex h-96 flex-col justify-between overflow-hidden rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default"
+              >
+                <div class="relative h-full overflow-hidden rounded-lg">
+                  <img
+                    src="../../src/assets/img/mockup-mysteres-a-la-carte-light.png"
+                    alt=""
+                    class="h-full w-full object-cover"
+                  />
+
+                  <div
+                    class="absolute inset-0 bg-red-pink-300 opacity-25"
+                  ></div>
+                </div>
+                <div
+                  class="absolute inset-0 flex flex-col justify-between transition-transform duration-500 lg:translate-y-full lg:transform lg:group-hover:translate-y-0"
+                >
+                  <div
+                    class="flex h-32 items-center justify-center rounded-t-lg"
+                  >
+                    <div class="rounded-lg bg-red-pink-50">
+                      <h3 class="p-5 font-Patua text-base md:text-lg">
+                        Mystères à la Carte
+                      </h3>
+                    </div>
+                  </div>
+                  <div
+                    class="rounded-b-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default"
+                  >
+                    <h4
+                      class="font-Patua text-sm uppercase tracking-[1px] text-red-pink-600 md:text-base"
+                    >
+                      UX/UI design
+                    </h4>
+                    <p class="mb-5 mt-3 text-sm leading-relaxed md:text-base">
+                      Élaboration de la charte graphique. Mise en situation du
+                      logo sur différents mockups : casquettes, affiche
+                      publicitaire, enseigne...
+                    </p>
+                    <div class="flex gap-4 md:gap-6">
+                      <div
+                        class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+                      >
+                        <img
+                          class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                          src="../../src/assets/img/figma.png"
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+                      >
+                        <img
+                          class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                          src="../../src/assets/img/photoshop.png"
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+                      >
+                        <img
+                          class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                          src="../../src/assets/img/illustrator.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </a>
+            <!-- PROJECT 5 -->
+            <a href="project.html" class="hidden md:block">
+              <article
+                class="group relative flex h-96 flex-col justify-between overflow-hidden rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default"
+              >
+                <div class="relative h-full overflow-hidden rounded-lg">
+                  <img
+                    src="../../src/assets/img/mockup-formations-dessin-light.jpg"
+                    alt=""
+                    class="h-full w-full object-cover"
+                  />
+                  <div
+                    class="absolute inset-0 bg-red-pink-300 opacity-25"
+                  ></div>
+                </div>
+                <div
+                  class="absolute inset-0 flex flex-col justify-between lg:translate-y-full lg:transform lg:transition-transform lg:duration-500 lg:group-hover:translate-y-0"
+                >
+                  <div
+                    class="flex h-32 items-center justify-center rounded-t-lg"
+                  >
+                    <div class="rounded-lg bg-red-pink-50">
+                      <h3 class="p-5 font-Patua text-base md:text-lg">
+                        Formations Dessin
+                      </h3>
+                    </div>
+                  </div>
+                  <div
+                    class="rounded-b-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default"
+                  >
+                    <h4
+                      class="font-Patua text-sm uppercase tracking-[1px] text-red-pink-600 md:text-base"
+                    >
+                      Développement
+                    </h4>
+                    <p class="mb-5 mt-3 text-sm leading-relaxed md:text-base">
+                      Création d’un site web sur l’apprentissage du dessin.
+                      Réalisation de A à Z, de la gestion de projet à la
+                      création de la base de données.
+                    </p>
+                    <div class="flex gap-4 md:gap-6">
+                      <div
+                        class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+                      >
+                        <img
+                          class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                          src="../../src/assets/img/figma.png"
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+                      >
+                        <img
+                          class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                          src="../../src/assets/img/javascript.png"
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+                      >
+                        <img
+                          class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                          src="../../src/assets/img/php.png"
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+                      >
+                        <img
+                          class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                          src="../../src/assets/img/sql.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </a>
+            <!-- PROJECT 6 -->
+            <a href="project.html" class="hidden md:block">
+              <article
+                class="group relative flex h-96 flex-col justify-between overflow-hidden rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default"
+              >
+                <div class="relative h-full overflow-hidden rounded-lg">
+                  <img
+                    src="../../src/assets/img/mockup-immo-prestige-light.jpg"
+                    alt=""
+                    class="h-full w-full object-cover"
+                  />
+
+                  <div
+                    class="0 absolute inset-0 bg-red-pink-300 opacity-25"
+                  ></div>
+                </div>
+                <div
+                  class="absolute inset-0 flex flex-col justify-between transition-transform duration-500 lg:translate-y-full lg:transform lg:group-hover:translate-y-0"
+                >
+                  <div
+                    class="flex h-32 items-center justify-center rounded-t-lg"
+                  >
+                    <div class="rounded-lg bg-red-pink-50">
+                      <h3 class="p-5 font-Patua text-base md:text-lg">
+                        Immo Prestige
+                      </h3>
+                    </div>
+                  </div>
+                  <div
+                    class="rounded-b-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default"
+                  >
+                    <h4
+                      class="font-Patua text-sm uppercase tracking-[1px] text-red-pink-600 md:text-base"
+                    >
+                      Développement
+                    </h4>
+                    <p class="mb-5 mt-3 text-sm leading-relaxed md:text-base">
+                      Création d’un site web sur l’apprentissage du dessin.
+                      Réalisation de A à Z, de la gestion de projet à la
+                      création de la base de données.
+                    </p>
+                    <div class="flex gap-4 md:gap-6">
+                      <div
+                        class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+                      >
+                        <img
+                          class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                          src="../../src/assets/img/figma.png"
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+                      >
+                        <img
+                          class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                          src="../../src/assets/img/react.png"
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+                      >
+                        <img
+                          class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                          src="../../src/assets/img/redux.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </a>
+            <!-- PROJECT 7 -->
+            <a href="project.html" class="hidden lg:hidden xl:block">
+              <article
+                class="group relative flex h-96 flex-col justify-between overflow-hidden rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default"
+              >
+                <div class="relative h-full overflow-hidden rounded-lg">
+                  <img
+                    src="../../src/assets/img/mockup-norel-art-light.jpg"
+                    alt=""
+                    class="h-full w-full object-cover"
+                  />
+
+                  <div
+                    class="absolute inset-0 bg-red-pink-300 opacity-25"
+                  ></div>
+                </div>
+                <div
+                  class="absolute inset-0 flex flex-col justify-between transition-transform duration-500 lg:translate-y-full lg:transform lg:group-hover:translate-y-0"
+                >
+                  <div
+                    class="flex h-32 items-center justify-center rounded-t-lg"
+                  >
+                    <div class="rounded-lg bg-red-pink-50">
+                      <h3 class="p-5 font-Patua text-base md:text-lg">
+                        Norel Art
+                      </h3>
+                    </div>
+                  </div>
+                  <div
+                    class="rounded-b-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default"
+                  >
+                    <h4
+                      class="font-Patua text-sm uppercase tracking-[1px] text-red-pink-600 md:text-base"
+                    >
+                      UX/UI design
+                    </h4>
+                    <p class="mb-5 mt-3 text-sm leading-relaxed md:text-base">
+                      Création des maquettes entièrement responsives.
+                      Réalisation de A à Z, de la gestion de projet à la
+                      conception des maquettes.
+                    </p>
+                    <div class="flex gap-4 md:gap-6">
+                      <div
+                        class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+                      >
+                        <img
+                          class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                          src="../../src/assets/img/figma.png"
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+                      >
+                        <img
+                          class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                          src="../../src/assets/img/photoshop.png"
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+                      >
+                        <img
+                          class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                          src="../../src/assets/img/illustrator.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </a>
+            <!-- PROJECT 8 -->
+            <a href="project.html" class="hidden lg:hidden xl:block">
+              <article
+                class="group relative flex h-96 flex-col justify-between overflow-hidden rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default"
+              >
+                <div class="relative h-full overflow-hidden rounded-lg">
+                  <img
+                    src="../../src/assets/img/mockup-mysteres-a-la-carte-light.png"
+                    alt=""
+                    class="h-full w-full object-cover"
+                  />
+
+                  <div
+                    class="absolute inset-0 bg-red-pink-300 opacity-25"
+                  ></div>
+                </div>
+                <div
+                  class="absolute inset-0 flex flex-col justify-between transition-transform duration-500 lg:translate-y-full lg:transform lg:group-hover:translate-y-0"
+                >
+                  <div
+                    class="flex h-32 items-center justify-center rounded-t-lg"
+                  >
+                    <div class="rounded-lg bg-red-pink-50">
+                      <h3 class="p-5 font-Patua text-base md:text-lg">
+                        Mystères à la Carte
+                      </h3>
+                    </div>
+                  </div>
+                  <div
+                    class="rounded-b-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default"
+                  >
+                    <h4
+                      class="font-Patua text-sm uppercase tracking-[1px] text-red-pink-600 md:text-base"
+                    >
+                      UX/UI design
+                    </h4>
+                    <p class="mb-5 mt-3 text-sm leading-relaxed md:text-base">
+                      Élaboration de la charte graphique. Mise en situation du
+                      logo sur différents mockups : casquettes, affiche
+                      publicitaire, enseigne...
+                    </p>
+                    <div class="flex gap-4 md:gap-6">
+                      <div
+                        class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+                      >
+                        <img
+                          class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                          src="../../src/assets/img/figma.png"
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+                      >
+                        <img
+                          class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                          src="../../src/assets/img/photoshop.png"
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+                      >
+                        <img
+                          class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                          src="../../src/assets/img/illustrator.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </a>
+          </div>
+
+          <div class="mt-12 flex items-center justify-center gap-5">
+            <a
+              href="#"
+              class="group flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-10 md:w-10 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+            >
+              <i
+                class="fa-solid fa-chevron-left text-xs transition-transform duration-300 md:text-base lg:transform lg:group-hover:scale-90"
+              ></i>
+            </a>
+            <a
+              href="#"
+              class="group flex h-6 w-6 items-center justify-center rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-8 md:w-8 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+            >
+              <span
+                class="text-xs font-bold transition-transform duration-300 lg:transform lg:group-hover:scale-90"
+                >1</span
+              >
+            </a>
+            <a
+              href="#"
+              class="group flex h-6 w-6 items-center justify-center rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-8 md:w-8 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+            >
+              <span
+                class="text-xs font-bold transition-transform duration-300 lg:transform lg:group-hover:scale-90"
+                >2</span
+              >
+            </a>
+            <a
+              href="#"
+              class="group flex h-6 w-6 items-center justify-center rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-8 md:w-8 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+            >
+              <span
+                class="text-xs font-bold transition-transform duration-300 lg:transform lg:group-hover:scale-90"
+                >3</span
+              >
+            </a>
+            <a
+              href="#"
+              class="group flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-10 md:w-10 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+            >
+              <i
+                class="fa-solid fa-chevron-right text-xs transition-transform duration-300 md:text-base lg:transform lg:group-hover:scale-90"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="mx-3 rounded-3xl bg-red-pink-100 px-8 pb-24 pt-8 shadow-light-pressed sm:mx-6 sm:mb-10 sm:p-8 md:mx-10 lg:mx-10"
+    >
+      <div
+        class="grid grid-cols-1 grid-rows-2 gap-10 sm:grid-rows-1 md:grid-cols-[200px_auto] md:gap-5 xl:grid-cols-[400px_auto]"
+      >
+        <!-- Section logo et liens sociaux -->
+        <div class="flex flex-col items-center justify-center">
+          <a href="./../index.html" title="Accueil">
+            <!-- Logo clair -->
+            <img
+              src="../src/assets/img/logo-light.png"
+              alt="Logo du portfolio"
+              class="mb-5 h-24 transition-transform hover:scale-125"
+            />
+          </a>
+          <div class="flex gap-4 md:gap-6">
+            <a
+              href="https://www.linkedin.com/in/stephanie-vanoverberghe/"
+              target="_blank"
+              class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+            >
+              <img
+                class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                src="../src/assets/img/linkedin.png"
+                alt=""
+              />
+            </a>
+            <a
+              href="https://github.com/stephanievanoverberghe"
+              target="_blank"
+              class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+            >
+              <img
+                class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                src="../src/assets/img/github.png"
+                alt=""
+              />
+            </a>
+            <a
+              href="https://www.behance.net/vano-stephanie"
+              target="_blank"
+              class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+            >
+              <img
+                class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                src="../src/assets/img/behance.png"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+        <!-- Section des liens -->
+        <div class="flex justify-around">
+          <div
+            class="hidden items-center justify-center sm:flex sm:flex-col sm:items-start sm:justify-start"
+          >
+            <span
+              class="mb-7 font-Patua text-sm uppercase text-red-pink-700 lg:text-lg"
+              >Liens importants</span
+            >
+            <a
+              href="#about"
+              class="mb-7 text-xs text-red-pink-950 transition-colors duration-300 lg:mb-4 lg:text-base lg:hover:text-red-600"
+              >A propos</a
+            >
+            <a
+              href="pages/projects.html"
+              class="mb-7 text-xs text-red-pink-950 transition-colors duration-300 lg:mb-4 lg:text-base lg:hover:text-red-600"
+              >Projets</a
+            >
+            <a
+              href="#contact"
+              class="mb-7 text-xs text-red-pink-950 transition-colors duration-300 lg:mb-4 lg:text-base lg:hover:text-red-600"
+              >Contact</a
+            >
+          </div>
+          <div
+            class="flex flex-col items-center justify-center sm:items-start sm:justify-start"
+          >
+            <span
+              class="mb-7 font-Patua text-sm uppercase text-red-pink-700 lg:text-lg"
+              >Informations légales</span
+            >
+            <a
+              href="pages/legal-info/legal-notice.html"
+              class="mb-6 text-xs text-red-pink-950 transition-colors duration-300 lg:mb-4 lg:text-base lg:hover:text-red-600"
+              >Mentions légales</a
+            >
+            <a
+              href="pages/legal-info/privacy-policy.html"
+              class="mb-6 text-xs text-red-pink-950 transition-colors duration-300 lg:mb-4 lg:text-base lg:hover:text-red-600"
+              >Politique de confidentialité</a
+            >
+            <a
+              href="pages/legal-info/cgu.html"
+              class="text-xs text-red-pink-950 transition-colors duration-300 lg:text-base lg:hover:text-red-600"
+              >CGU</a
+            >
+          </div>
+        </div>
+      </div>
+      <p class="mt-10 text-center text-xs">
+        Copyright 2024 Vanoverberghe Stéphanie. Tous droits réservés.
+      </p>
+    </footer>
+  </body>
+</html>
