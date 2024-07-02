@@ -1,6 +1,6 @@
 # PORTFOLIO - Vanoverberghe Stéphanie - Développeuse Front-End spécialisée en React
 
-[![npm version](https://badge.fury.io/js/npm.svg)](https://badge.fury.io/js/npm) ![GitHub last commit](https://img.shields.io/github/last-commit/stephanievanoverberghe/sv-portfolio)
+[![npm version](https://badge.fury.io/js/npm.svg)](https://badge.fury.io/js/npm) ![GitHub last commit](https://img.shields.io/github/last-commit/stephanievanoverberghe/portfolio)
 
 ## Table des matières
 
