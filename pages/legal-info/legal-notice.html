@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Préchargement des polices Google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Chargement des icônes FontAwesome -->
+        <script
+            src="https://kit.fontawesome.com/33a775bcdb.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="../../src/output.css" />
+        <title>Portfolio - Vanoverberghe Stéphanie</title>
+    </head>
+
+    <body
+        class="flex min-h-screen flex-col justify-between bg-red-pink-50 text-red-pink-950"
+    >
+        <div class="flex flex-col bg-red-pink-100">
+            <!-- HEADER DESKTOP AND TABLETTE -->
+            <header
+                class="hidden items-center justify-between rounded-full bg-red-pink-50 shadow-light-pressed sm:m-4 sm:flex"
+            >
+                <div class="cursor-pointer">
+                    <a href="../../index.html" title="Accueil">
+                        <!-- Logo clair -->
+                        <img
+                            src="../../src/assets/img/logo-light.png"
+                            alt="Logo du portfolio"
+                            class="ml-6 h-14"
+                        />
+                    </a>
+                </div>
+                <!-- Navigation principale -->
+                <nav class="hidden lg:block">
+                    <ul class="flex items-center gap-6">
+                        <!-- Liens de navigation avec effets visuels -->
+                        <li
+                            class="group transform cursor-pointer rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 font-bold shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed"
+                        >
+                            <a
+                                href="../../index.html"
+                                class="block h-full w-full transform px-8 py-2 transition-transform duration-300 ease-in-out group-hover:scale-90"
+                            >
+                                A propos
+                            </a>
+                        </li>
+                        <li
+                            class="group transform cursor-pointer rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 font-bold text-red-pink-600 shadow-light-pressed transition-transform duration-300 ease-in-out hover:scale-95"
+                        >
+                            <a
+                                href="../../pages/projects.html"
+                                class="block h-full w-full transform px-8 py-2 transition-transform duration-300 ease-in-out group-hover:scale-90"
+                            >
+                                Projets
+                            </a>
+                        </li>
+                        <li
+                            class="group transform cursor-pointer rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 font-bold shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed"
+                        >
+                            <a
+                                href="../../index.html"
+                                class="block h-full w-full transform px-8 py-2 transition-transform duration-300 ease-in-out group-hover:scale-90"
+                            >
+                                Compétences
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Composants à droite du header -->
+                <div class="flex items-center gap-6">
+                    <!-- Bouton du menu hamburger pour mobile -->
+                    <div class="block lg:hidden">
+                        <button
+                            class="mx-4 flex h-10 w-10 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default"
+                        >
+                            <i class="fa-solid fa-bars fa-xl"></i>
+                        </button>
+                    </div>
+                    <!-- Lien vers la page de contact -->
+                    <a
+                        href="#contact"
+                        class="hidden h-[68px] rounded-e-full bg-red-pink-50 p-5 shadow-light-default transition-shadow duration-300 ease-in-out hover:shadow-light-pressed lg:block"
+                    >
+                        Me contacter
+                    </a>
+                </div>
+            </header>
+            <!-- HEADER MOBILE -->
+            <header
+                class="fixed bottom-0 z-50 flex w-full items-center justify-around border-t-[1px] border-red-pink-100 bg-red-pink-50 p-3.5 shadow-shadow-header sm:hidden"
+            >
+                <!-- Icônes pour la navigation mobile -->
+                <div class="flex flex-col items-center justify-center">
+                    <a
+                        href="../../index.html"
+                        class="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-3 shadow-light-default"
+                    >
+                        <i class="fa-solid fa-house"> </i>
+                    </a>
+                    <span class="mt-2 text-xs">Accueil</span>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                    <a
+                        href="../../pages/projects.html"
+                        class="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-3 shadow-light-default"
+                    >
+                        <i class="fa-solid fa-diagram-project"></i>
+                    </a>
+                    <span class="mt-2 text-xs">Projets</span>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                    <a
+                        href="#contact"
+                        class="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-3 shadow-light-default"
+                    >
+                        <i class="fa-solid fa-address-card"></i>
+                    </a>
+                    <span class="mt-2 text-xs">Contact</span>
+                </div>
+            </header>
+        </div>
+        <main class="mx-3 sm:mx-6 md:mx-10">
+            <p
+                class="mb-4 mt-5 text-center font-Patua text-2xl md:mb-10 md:mt-7 md:text-4xl"
+            >
+                En construction
+            </p>
+        </main>
+        <footer
+            class="mx-3 rounded-3xl bg-red-pink-100 px-8 pb-24 pt-8 shadow-light-pressed sm:mx-6 sm:mb-10 sm:p-8 md:mx-10 lg:mx-10"
+        >
+            <div
+                class="grid grid-cols-1 grid-rows-2 gap-10 sm:grid-rows-1 md:grid-cols-[200px_auto] md:gap-5 xl:grid-cols-[400px_auto]"
+            >
+                <!-- Section logo et liens sociaux -->
+                <div class="flex flex-col items-center justify-center">
+                    <a href="../../index.html" title="Accueil">
+                        <!-- Logo clair -->
+                        <img
+                            src="../../src/assets/img/logo-light.png"
+                            alt="Logo du portfolio"
+                            class="mb-5 h-24 transition-transform hover:scale-125"
+                        />
+                    </a>
+                    <div class="flex gap-4 md:gap-6">
+                        <a
+                            href="https://www.linkedin.com/in/stephanie-vanoverberghe/"
+                            target="_blank"
+                            class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+                        >
+                            <img
+                                class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                                src="../../src/assets/img/linkedin.png"
+                                alt=""
+                            />
+                        </a>
+                        <a
+                            href="https://github.com/stephanievanoverberghe"
+                            target="_blank"
+                            class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+                        >
+                            <img
+                                class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                                src="../../src/assets/img/github.png"
+                                alt=""
+                            />
+                        </a>
+                        <a
+                            href="https://www.behance.net/vano-stephanie"
+                            target="_blank"
+                            class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+                        >
+                            <img
+                                class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                                src="../../src/assets/img/behance.png"
+                                alt=""
+                            />
+                        </a>
+                    </div>
+                </div>
+                <!-- Section des liens -->
+                <div class="flex justify-around">
+                    <div
+                        class="hidden items-center justify-center sm:flex sm:flex-col sm:items-start sm:justify-start"
+                    >
+                        <span
+                            class="mb-7 font-Patua text-sm uppercase text-red-pink-700 lg:text-lg"
+                            >Liens importants</span
+                        >
+                        <a
+                            href="../../index.html"
+                            class="mb-7 text-xs text-red-pink-950 transition-colors duration-300 lg:mb-4 lg:text-base lg:hover:text-red-600"
+                            >A propos</a
+                        >
+                        <a
+                            href="../../pages/projects.html"
+                            class="mb-7 text-xs text-red-pink-950 transition-colors duration-300 lg:mb-4 lg:text-base lg:hover:text-red-600"
+                            >Projets</a
+                        >
+                        <a
+                            href="../../index.html"
+                            class="mb-7 text-xs text-red-pink-950 transition-colors duration-300 lg:mb-4 lg:text-base lg:hover:text-red-600"
+                            >Contact</a
+                        >
+                    </div>
+                    <div
+                        class="flex flex-col items-center justify-center sm:items-start sm:justify-start"
+                    >
+                        <span
+                            class="mb-7 font-Patua text-sm uppercase text-red-pink-700 lg:text-lg"
+                            >Informations légales</span
+                        >
+                        <a
+                            href="../../pages/legal-info/legal-notice.html"
+                            class="mb-6 text-xs text-red-pink-950 transition-colors duration-300 lg:mb-4 lg:text-base lg:hover:text-red-600"
+                            >Mentions légales</a
+                        >
+                        <a
+                            href="../../pages/legal-info/privacy-policy.html"
+                            class="mb-6 text-xs text-red-pink-950 transition-colors duration-300 lg:mb-4 lg:text-base lg:hover:text-red-600"
+                            >Politique de confidentialité</a
+                        >
+                        <a
+                            href="../../pages/legal-info/cgu.html"
+                            class="text-xs text-red-pink-950 transition-colors duration-300 lg:text-base lg:hover:text-red-600"
+                            >CGU</a
+                        >
+                    </div>
+                </div>
+            </div>
+            <p class="mt-10 text-center text-xs">
+                Copyright 2024 Vanoverberghe Stéphanie. Tous droits réservés.
+            </p>
+        </footer>
+    </body>
+</html>
