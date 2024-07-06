@@ -51,9 +51,8 @@
                             <a
                                 href="../index.html"
                                 class="block h-full w-full transform px-8 py-2 transition-transform duration-300 ease-in-out group-hover:scale-90"
+                                >A propos</a
                             >
-                                A propos
-                            </a>
                         </li>
                         <li
                             class="group transform cursor-pointer rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 font-bold text-red-pink-600 shadow-light-pressed transition-transform duration-300 ease-in-out hover:scale-95"
@@ -61,9 +60,8 @@
                             <a
                                 href="../pages/projects.html"
                                 class="block h-full w-full transform px-8 py-2 transition-transform duration-300 ease-in-out group-hover:scale-90"
+                                >Projets</a
                             >
-                                Projets
-                            </a>
                         </li>
                         <li
                             class="group transform cursor-pointer rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 font-bold shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed"
@@ -71,13 +69,11 @@
                             <a
                                 href="../index.html"
                                 class="block h-full w-full transform px-8 py-2 transition-transform duration-300 ease-in-out group-hover:scale-90"
+                                >Compétences</a
                             >
-                                Compétences
-                            </a>
                         </li>
                     </ul>
                 </nav>
-
                 <!-- Composants à droite du header -->
                 <div class="flex items-center gap-6">
                     <!-- Bouton du menu hamburger pour mobile -->
@@ -88,15 +84,16 @@
                             <i class="fa-solid fa-bars fa-xl"></i>
                         </button>
                     </div>
-                    <!-- Lien vers la page de contact -->
+                    <!-- Lien vers la page de contact avec animation et mailto -->
                     <a
-                        href="#contact"
-                        class="hidden h-[68px] rounded-e-full bg-red-pink-50 p-5 shadow-light-default transition-shadow duration-300 ease-in-out hover:shadow-light-pressed lg:block"
+                        href="mailto:orangestreet@live.fr"
+                        class="hidden h-[68px] transform rounded-e-full bg-red-pink-50 p-5 shadow-light-default transition-transform duration-500 ease-in-out hover:scale-105 hover:shadow-light-pressed lg:block"
                     >
                         Me contacter
                     </a>
                 </div>
             </header>
+
             <!-- HEADER MOBILE -->
             <header
                 class="fixed bottom-0 z-50 flex w-full items-center justify-around border-t-[1px] border-red-pink-100 bg-red-pink-50 p-3.5 shadow-shadow-header sm:hidden"
@@ -104,7 +101,7 @@
                 <!-- Icônes pour la navigation mobile -->
                 <div class="flex flex-col items-center justify-center">
                     <a
-                        href="index.html"
+                        href="../index.html"
                         class="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-3 shadow-light-default"
                     >
                         <i class="fa-solid fa-house"> </i>
@@ -113,7 +110,7 @@
                 </div>
                 <div class="flex flex-col items-center justify-center">
                     <a
-                        href="pages/projects.html"
+                        href="../pages/projects.html"
                         class="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-3 shadow-light-default"
                     >
                         <i class="fa-solid fa-diagram-project"></i>
@@ -206,7 +203,7 @@
                     Fonctionnalités principales
                 </h3>
                 <div
-                    class="flex w-full flex-col gap-8 sm:grid sm:grid-cols-2 lg:grid-cols-4"
+                    class="flex w-full flex-col gap-8 sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
                 >
                     <article
                         class="rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default"
@@ -343,152 +340,143 @@
                     <span class="text-red-pink-400"> techniques </span>
                     .
                 </h2>
-                <div class="grid grid-cols-4 gap-x-20">
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 md:gap-x-5 lg:grid-cols-3 lg:gap-x-10 xl:grid-cols-4 xl:gap-x-20"
+                >
                     <div>
                         <span
                             class="text-xs font-semibold uppercase tracking-[1px] text-red-pink-900 md:text-sm"
-                            >Gestion de projet</span
                         >
-                        <div class="mb-5 mt-4 flex gap-4 sm:mb-6 md:gap-6">
+                            Gestion de projet
+                        </span>
+                        <div class="mb-5 mt-4 flex gap-2 sm:mb-6 md:gap-3">
                             <button
-                                class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+                                class="group flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed md:h-16 md:w-16"
                             >
                                 <img
-                                    class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                                    class="h-6 w-6 transition-transform duration-300 group-hover:scale-90 md:h-9 md:w-9"
                                     src="../src/assets/img/trello.png"
-                                    alt=""
+                                    alt="Trello"
                                 />
                             </button>
                         </div>
                     </div>
+
                     <div>
                         <span
                             class="text-xs font-semibold uppercase tracking-[1px] text-red-pink-900 md:text-sm"
-                            >Outils graphiques</span
                         >
-                        <div class="mb-5 mt-4 flex gap-4 sm:mb-6 md:gap-6">
+                            Outils graphiques
+                        </span>
+                        <div class="mb-5 mt-4 flex gap-2 sm:mb-6 md:gap-3">
                             <button
-                                class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+                                class="group flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed md:h-16 md:w-16"
                             >
                                 <img
-                                    class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                                    class="h-6 w-6 transition-transform duration-300 group-hover:scale-90 md:h-9 md:w-9"
                                     src="../src/assets/img/xd.png"
-                                    alt=""
+                                    alt="Adobe XD"
                                 />
                             </button>
                             <button
-                                class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+                                class="group flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed md:h-16 md:w-16"
                             >
                                 <img
-                                    class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                                    class="h-6 w-6 transition-transform duration-300 group-hover:scale-90 md:h-9 md:w-9"
                                     src="../src/assets/img/illustrator.png"
-                                    alt=""
+                                    alt="Adobe Illustrator"
                                 />
                             </button>
                             <button
-                                class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+                                class="group flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed md:h-16 md:w-16"
                             >
                                 <img
-                                    class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                                    class="h-6 w-6 transition-transform duration-300 group-hover:scale-90 md:h-9 md:w-9"
                                     src="../src/assets/img/photoshop.png"
-                                    alt=""
+                                    alt="Adobe Photoshop"
                                 />
                             </button>
                             <button
-                                class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+                                class="group flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed md:h-16 md:w-16"
                             >
                                 <img
-                                    class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                                    class="h-6 w-6 transition-transform duration-300 group-hover:scale-90 md:h-9 md:w-9"
                                     src="../src/assets/img/indesign.png"
-                                    alt=""
+                                    alt="Adobe InDesign"
                                 />
                             </button>
                         </div>
                     </div>
+
                     <div>
                         <span
                             class="text-xs font-semibold uppercase tracking-[1px] text-red-pink-900 md:text-sm"
-                            >Outils techniques</span
                         >
-                        <div class="mb-5 mt-4 flex gap-4 sm:mb-6 md:gap-6">
+                            Outils techniques
+                        </span>
+                        <div class="mb-5 mt-4 flex gap-2 sm:mb-6 md:gap-3">
                             <button
-                                class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+                                class="group flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed md:h-16 md:w-16"
                             >
                                 <img
-                                    class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                                    class="h-6 w-6 transition-transform duration-300 group-hover:scale-90 md:h-9 md:w-9"
                                     src="../src/assets/img/vs-code.png"
-                                    alt=""
+                                    alt="VS Code"
                                 />
                             </button>
                             <button
-                                class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+                                class="group flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed md:h-16 md:w-16"
                             >
                                 <img
-                                    class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                                    class="h-6 w-6 transition-transform duration-300 group-hover:scale-90 md:h-9 md:w-9"
                                     src="../src/assets/img/github.png"
-                                    alt=""
+                                    alt="GitHub"
                                 />
                             </button>
                             <button
-                                class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+                                class="group flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed md:h-16 md:w-16"
                             >
                                 <img
-                                    class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                                    class="h-6 w-6 transition-transform duration-300 group-hover:scale-90 md:h-9 md:w-9"
                                     src="../src/assets/img/phpmyadmin.png"
-                                    alt=""
+                                    alt="phpMyAdmin"
                                 />
                             </button>
                         </div>
                     </div>
+
                     <div>
                         <span
                             class="text-xs font-semibold uppercase tracking-[1px] text-red-pink-900 md:text-sm"
-                            >Langages utilisés</span
                         >
-                        <div class="mb-5 mt-4 flex gap-4 sm:mb-6 md:gap-6">
+                            Langages utilisés
+                        </span>
+                        <div class="mb-5 mt-4 flex gap-2 sm:mb-6 md:gap-3">
                             <button
-                                class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+                                class="group flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed md:h-16 md:w-16"
                             >
                                 <img
-                                    class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                    src="../src/assets/img/html.png"
-                                    alt=""
-                                />
-                            </button>
-                            <button
-                                class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
-                            >
-                                <img
-                                    class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                    src="../src/assets/img/css.png"
-                                    alt=""
-                                />
-                            </button>
-                            <button
-                                class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
-                            >
-                                <img
-                                    class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                                    class="h-6 w-6 transition-transform duration-300 group-hover:scale-90 md:h-9 md:w-9"
                                     src="../src/assets/img/bootstrap.png"
-                                    alt=""
+                                    alt="Bootstrap"
                                 />
                             </button>
                             <button
-                                class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+                                class="group flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed md:h-16 md:w-16"
                             >
                                 <img
-                                    class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                                    class="h-6 w-6 transition-transform duration-300 group-hover:scale-90 md:h-9 md:w-9"
                                     src="../src/assets/img/javascript.png"
-                                    alt=""
+                                    alt="JavaScript"
                                 />
                             </button>
                             <button
-                                class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
+                                class="group flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed md:h-16 md:w-16"
                             >
                                 <img
-                                    class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                                    class="h-6 w-6 transition-transform duration-300 group-hover:scale-90 md:h-9 md:w-9"
                                     src="../src/assets/img/php.png"
-                                    alt=""
+                                    alt="PHP"
                                 />
                             </button>
                         </div>
@@ -998,7 +986,7 @@
                             >Projets</a
                         >
                         <a
-                            href="../index.html"
+                            href="mailto:orangestreet@live.fr"
                             class="mb-7 text-xs text-red-pink-950 transition-colors duration-300 lg:mb-4 lg:text-base lg:hover:text-red-600"
                             >Contact</a
                         >

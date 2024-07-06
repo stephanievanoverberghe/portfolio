@@ -1,0 +1,214 @@
+{
+    "courses": [
+        {
+            "id": 1,
+            "name": "CDA Front-End JavaScript React",
+            "place": "Openclassrooms - distanciel",
+            "start": "2024",
+            "end": "Présent",
+            "skills": [
+                "Création de 11 projets en situation d’entreprise.",
+                "Maîtrise des langages HTML, CSS, SASS, Bootstrap, JavaScript, React.",
+                "Écrire des tests unitaires, interagir et modéliser une API."
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Graduate Web et communication visuelle",
+            "place": "Studi - distanciel",
+            "start": "2024",
+            "end": "Présent",
+            "skills": [
+                "Travail sur divers projets en situation d'entreprise.",
+                "Gestion de projet, veille, UX design, UI design, responsive design, datavisualisation, accessibilité, print.",
+                "Maîtrise de Photoshop, Illustrator, Indesign, Première Pro, After Effects, WordPress, HTML, CSS."
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Développeur Web et Web Mobile",
+            "place": "La Manu - Amiens",
+            "start": "2022",
+            "end": "2023",
+            "skills": [
+                "Langages HTML, CSS, Bootstrap, JavaScript, PHP, SQL, Merise, Wordpress.",
+                "Maquettage, UX design, Responsive design, SEO, stage de 40h en entreprise.",
+                "Conception d'une plateforme E-learning en lien avec l'apprentissage du dessin."
+            ]
+        }
+    ],
+    "experiences": [
+        {
+            "id": 1,
+            "name": "Gestionnaire de stock",
+            "place": "Laboratoire d'analyse Bioamiens - Amiens",
+            "start": "2019",
+            "end": "2021",
+            "responsibilities": [
+                "Commande et réception de marchandise sur les 4 laboratoires Bioamiens.",
+                "Utilisation du système informatique Kalilab. Gestion des fiches produits. Relationnel fournisseur.",
+                "Organisation de l'espace de travail dans la réserve d'entreposage dédiée aux produits. Faire remonter à la direction d'éventuels problèmes liés aux marchandises et aux fournisseurs (délais, rupture de stock, etc.)."
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Coursière",
+            "place": "Laboratoire d'analyse Bioamiens - Amiens",
+            "start": "2019",
+            "end": "2024",
+            "responsibilities": [
+                "Récupération des bilans sanguins et autres dans les pharmacies, les centres médicaux pour les ramener au laboratoire d'analyse.",
+                "Tournée sur Amiens et alentour (Poix-de-Picardie, Moreuil, Flixecourt, Boves, Beauval, etc.).",
+                "Gestion des plannings coursiers."
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Saisonnière",
+            "place": "Les Alpes",
+            "start": "2013",
+            "end": "2018",
+            "responsibilities": [
+                "Nettoyage des chambres. Interaction avec les clients. Lecture d'une feuille d'étage.",
+                "Réapprovisionnement des chambres en linges, draps, produits d'usage.",
+                "Maintenance des chambres : signaler les dommages, vérifier l'installation."
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "category": "Front-End",
+            "skills": [
+                {
+                    "id": 1,
+                    "name": "HTML",
+                    "description": "Maîtrise des balises HTML, des attributs, des éléments de structure, et des meilleures pratiques pour créer des pages web sémantiquement correctes."
+                },
+                {
+                    "id": 2,
+                    "name": "CSS",
+                    "description": "Compétences avancées en mise en page, y compris l'utilisation de Flexbox et Grid pour créer des designs responsives. Capacité à styliser des composants et à appliquer des transitions et des animations CSS."
+                },
+                {
+                    "id": 3,
+                    "name": "Bootstrap",
+                    "description": "Utilisation de Bootstrap pour créer des interfaces utilisateur réactives et attrayantes, en utilisant ses classes utilitaires et ses composants préconçus."
+                },
+                {
+                    "id": 4,
+                    "name": "Tailwind",
+                    "description": "Utilisation de Tailwind pour un design utilitaire, permettant une personnalisation rapide et efficace des styles directement dans le HTML."
+                },
+                {
+                    "id": 5,
+                    "name": "Sass",
+                    "description": "Utilisation de Sass pour écrire du CSS modulaire et maintenable, avec des fonctionnalités telles que les variables, les mixins, et les fonctions."
+                },
+                {
+                    "id": 6,
+                    "name": "JavaScript (ES6+)",
+                    "description": "Compétences avancées en JavaScript, y compris les promesses, les fonctions asynchrones, et l'utilisation des modules ES6."
+                },
+                {
+                    "id": 7,
+                    "name": "React",
+                    "description": "Expertise en développement d'applications React, avec une compréhension approfondie des concepts tels que les hooks, le state management, et le lifecycle des composants."
+                },
+                {
+                    "id": 8,
+                    "name": "Redux",
+                    "description": "Gestion efficace de l'état des applications avec Redux, y compris la création de reducers, d'actions et l'utilisation du middleware Redux Thunk."
+                },
+                {
+                    "id": 9,
+                    "name": "Jest",
+                    "description": "Utilisation de Jest pour écrire et exécuter des tests unitaires, en s'assurant que le code est fiable et maintenable."
+                },
+                {
+                    "id": 10,
+                    "name": "JSDoc",
+                    "description": "Documentation du code JavaScript avec JSDoc pour améliorer la lisibilité et la maintenabilité."
+                }
+            ]
+        },
+        {
+            "category": "UX/UI Design",
+            "skills": [
+                {
+                    "id": 1,
+                    "name": "Recherche utilisateur",
+                    "description": "Capacité à mener des recherches utilisateur pour comprendre les besoins et les comportements des utilisateurs finaux."
+                },
+                {
+                    "id": 2,
+                    "name": "Wireframes et maquettes",
+                    "description": "Création de wireframes et de maquettes avec des outils tels que Figma et Adobe XD."
+                },
+                {
+                    "id": 3,
+                    "name": "Prototypes",
+                    "description": "Développement de prototypes interactifs pour valider les conceptions avant la mise en œuvre."
+                },
+                {
+                    "id": 4,
+                    "name": "Identité visuelle",
+                    "description": "Conception de logos, d'animations et d'autres éléments graphiques en utilisant Adobe Illustrator, Photoshop, et After Effects."
+                },
+                {
+                    "id": 5,
+                    "name": "WordPress",
+                    "description": "Utilisation de WordPress pour créer et gérer des sites web, y compris la personnalisation des thèmes et des plugins."
+                }
+            ]
+        },
+        {
+            "category": "Gestion de projet",
+            "skills": [
+                {
+                    "id": 1,
+                    "name": "Planification et organisation",
+                    "description": "Définition des objectifs, des tâches, des délais et des ressources nécessaires pour réaliser un projet. Création de calendriers, de plannings et de listes de tâches pour structurer le travail."
+                },
+                {
+                    "id": 2,
+                    "name": "Méthodes agiles",
+                    "description": "Utilisation de la méthode Agile, en particulier Scrum, pour gérer le développement de projets. Création de user stories et organisation des sprints avec des outils comme Trello."
+                },
+                {
+                    "id": 3,
+                    "name": "Résolution de problèmes",
+                    "description": "Capacité à identifier et à résoudre les problèmes rapidement, et à ajuster les plans si nécessaire."
+                }
+            ]
+        },
+        {
+            "category": "SEO",
+            "skills": [
+                {
+                    "id": 1,
+                    "name": "Optimisation On-Page",
+                    "description": "Identification des mots-clés pertinents pour améliorer le contenu. Optimisation des éléments sur le site web tels que les balises de titre, les méta-descriptions, les en-têtes, et le contenu pour augmenter la pertinence et la visibilité."
+                },
+                {
+                    "id": 2,
+                    "name": "Performance et accessibilité",
+                    "description": "Amélioration de la vitesse de chargement des pages, de l'indexation par les moteurs de recherche et de l'optimisation des images. Application des bonnes pratiques d'accessibilité pour rendre le site web accessible à un public plus large."
+                }
+            ]
+        }
+    ],
+    "values": [
+        {
+            "id": 1,
+            "name": "Créativité"
+        },
+        {
+            "id": 2,
+            "name": "Travail en équipe"
+        },
+        {
+            "id": 3,
+            "name": "Apprentissage continu"
+        }
+    ]
+}

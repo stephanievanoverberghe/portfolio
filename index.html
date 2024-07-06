@@ -88,10 +88,10 @@
                             <i class="fa-solid fa-bars fa-xl"></i>
                         </button>
                     </div>
-                    <!-- Lien vers la page de contact -->
+                    <!-- Lien vers la page de contact avec animation et mailto -->
                     <a
-                        href="#contact"
-                        class="hidden h-[68px] rounded-e-full bg-red-pink-50 p-5 shadow-light-default transition-shadow duration-300 ease-in-out hover:shadow-light-pressed lg:block"
+                        href="mailto:orangestreet@live.fr"
+                        class="hidden h-[68px] transform rounded-e-full bg-red-pink-50 p-5 shadow-light-default transition-transform duration-500 ease-in-out hover:scale-105 hover:shadow-light-pressed lg:block"
                     >
                         Me contacter
                     </a>
@@ -122,7 +122,7 @@
                 </div>
                 <div class="flex flex-col items-center justify-center">
                     <a
-                        href="#contact"
+                        href="mailto:orangestreet@live.fr"
                         class="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-3 shadow-light-default"
                     >
                         <i class="fa-solid fa-address-card"></i>
@@ -295,14 +295,20 @@
                         <li
                             class="flex h-12 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 text-sm font-bold text-red-pink-600 shadow-light-pressed md:text-base lg:cursor-pointer"
                         >
-                            <a href="" class="p-8">Mon parcours</a>
+                            <a
+                                href="#courses"
+                                class="tab-link p-8"
+                                data-tab="courses"
+                                >Mon parcours</a
+                            >
                         </li>
                         <li
                             class="group flex h-12 transform items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 text-sm font-bold shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed md:text-base lg:cursor-pointer lg:hover:shadow-light-pressed"
                         >
                             <a
-                                href=""
-                                class="transform transition-transform duration-300 ease-in-out group-hover:scale-90"
+                                href="#experiences"
+                                class="tab-link transform transition-transform duration-300 ease-in-out group-hover:scale-90"
+                                data-tab="experiences"
                                 >Mon expérience</a
                             >
                         </li>
@@ -310,8 +316,9 @@
                             class="group flex h-12 transform items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 text-sm font-bold shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed md:text-base lg:cursor-pointer lg:hover:shadow-light-pressed"
                         >
                             <a
-                                href=""
-                                class="transform transition-transform duration-300 ease-in-out group-hover:scale-90"
+                                href="#skills-job"
+                                class="tab-link transform transition-transform duration-300 ease-in-out group-hover:scale-90"
+                                data-tab="skills-job"
                                 >Mes compétences</a
                             >
                         </li>
@@ -319,258 +326,165 @@
                             class="group flex h-12 transform items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 text-sm font-bold shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed md:text-base lg:cursor-pointer lg:hover:shadow-light-pressed"
                         >
                             <a
-                                href=""
-                                class="transform transition-transform duration-300 ease-in-out group-hover:scale-90"
+                                href="#values"
+                                class="tab-link transform transition-transform duration-300 ease-in-out group-hover:scale-90"
+                                data-tab="values"
                                 >Mes valeurs</a
                             >
                         </li>
                     </ul>
                 </nav>
-                <h2
-                    class="mb-5 text-center font-Patua text-lg text-red-pink-600 sm:mb-10 md:text-2xl"
-                >
-                    Mon parcours
-                </h2>
-                <div
-                    class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3"
-                >
+                <div id="courses" class="tab-content active">
+                    <h2
+                        class="mb-5 text-center font-Patua text-lg text-red-pink-600 sm:mb-10 md:text-2xl"
+                    >
+                        Mon parcours
+                    </h2>
                     <div
-                        class="w-full border-l-8 border-red-pink-200 bg-gradient-to-br from-red-pink-100 to-red-pink-50 pr-2 shadow-light-default"
+                        class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3"
                     >
                         <div
-                            class="grid grid-cols-[1fr] items-center gap-5 pt-4"
+                            class="w-full border-l-8 border-red-pink-200 bg-gradient-to-br from-red-pink-100 to-red-pink-50 pr-2 shadow-light-default"
                         >
-                            <span
-                                class="rounded-e-full bg-red-pink-200 px-7 py-2 text-xs font-bold tracking-[3px] text-red-pink-950 shadow-light-default"
-                                >2024 à Présent</span
+                            <div
+                                class="grid grid-cols-[1fr] items-center gap-5 pt-4"
                             >
-                            <div class="pl-4">
-                                <h3
-                                    class="font-Patua text-base text-red-pink-400 md:text-lg"
-                                >
-                                    CDA Front-End JavaScript React
-                                </h3>
                                 <span
-                                    class="text-xs uppercase tracking-[1px] text-red-pink-700"
-                                    >Openclassrooms - Distanciel</span
+                                    class="rounded-e-full bg-red-pink-200 px-7 py-2 text-xs font-bold tracking-[3px] text-red-pink-950 shadow-light-default"
+                                    >2024 à Présent</span
                                 >
+                                <div class="pl-4">
+                                    <h3
+                                        class="font-Patua text-base text-red-pink-400 md:text-lg"
+                                    >
+                                        CDA Front-End JavaScript React
+                                    </h3>
+                                    <span
+                                        class="text-xs uppercase tracking-[1px] text-red-pink-700"
+                                        >Openclassrooms - Distanciel</span
+                                    >
+                                </div>
                             </div>
+                            <ul
+                                class="list-inside list-disc p-4 text-sm leading-relaxed text-red-pink-950 md:text-base"
+                            >
+                                <li>
+                                    Créations de 11 projets en situation
+                                    d’entreprise.
+                                </li>
+                                <li>
+                                    Maîtrise des langages HTML, CSS, SASS,
+                                    Bootstrap, JavaScript, React.
+                                </li>
+                                <li>
+                                    Écrire des tests unitaires, interagir et
+                                    modéliser une API.
+                                </li>
+                            </ul>
                         </div>
-                        <ul
-                            class="list-inside list-disc p-4 text-sm leading-relaxed text-red-pink-950 md:text-base"
-                        >
-                            <li>
-                                Créations de 11 projets en situation
-                                d’entreprise.
-                            </li>
-                            <li>
-                                Maîtrise des langages HTML, CSS, SASS,
-                                Bootstrap, JavaScript, React.
-                            </li>
-                            <li>
-                                Écrire des tests unitaires, interagir et
-                                modéliser une API.
-                            </li>
-                        </ul>
-                    </div>
-                    <div
-                        class="w-full border-l-8 border-red-pink-200 bg-gradient-to-br from-red-pink-100 to-red-pink-50 pr-2 shadow-light-default"
-                    >
                         <div
-                            class="grid grid-cols-[1fr] items-center gap-5 pt-4"
+                            class="w-full border-l-8 border-red-pink-200 bg-gradient-to-br from-red-pink-100 to-red-pink-50 pr-2 shadow-light-default"
                         >
-                            <span
-                                class="rounded-e-full bg-red-pink-200 px-7 py-2 text-xs font-bold tracking-[3px] text-red-pink-950 shadow-light-default"
-                                >2024 à Présent</span
+                            <div
+                                class="grid grid-cols-[1fr] items-center gap-5 pt-4"
                             >
-                            <div class="pl-4">
-                                <h3
-                                    class="font-Patua text-base text-red-pink-400 md:text-lg"
-                                >
-                                    Graduate Web et communication visuelle
-                                </h3>
                                 <span
-                                    class="text-xs uppercase tracking-[1px] text-red-pink-700"
-                                    >Studi - Distanciel</span
+                                    class="rounded-e-full bg-red-pink-200 px-7 py-2 text-xs font-bold tracking-[3px] text-red-pink-950 shadow-light-default"
+                                    >2024 à Présent</span
                                 >
+                                <div class="pl-4">
+                                    <h3
+                                        class="font-Patua text-base text-red-pink-400 md:text-lg"
+                                    >
+                                        Graduate Web et communication visuelle
+                                    </h3>
+                                    <span
+                                        class="text-xs uppercase tracking-[1px] text-red-pink-700"
+                                        >Studi - Distanciel</span
+                                    >
+                                </div>
                             </div>
+                            <ul
+                                class="list-inside list-disc p-4 text-sm leading-relaxed text-red-pink-950 md:text-base"
+                            >
+                                <li>
+                                    Travaille sur diverses projets en situation
+                                    d'entreprise.
+                                </li>
+                                <li>
+                                    Gestion de projet, veille, UX design, UI
+                                    design, responsive design, datavisualisation
+                                    accessibilité, print...
+                                </li>
+                                <li>
+                                    Maîtrise de Photoshop, Illustrator,
+                                    Indesign, Première Pro, After Effects,
+                                    WordPress, HTML, CSS.
+                                </li>
+                            </ul>
                         </div>
-                        <ul
-                            class="list-inside list-disc p-4 text-sm leading-relaxed text-red-pink-950 md:text-base"
-                        >
-                            <li>
-                                Travaille sur diverses projets en situation
-                                d'entreprise.
-                            </li>
-                            <li>
-                                Gestion de projet, veille, UX design, UI design,
-                                responsive design, datavisualisation
-                                accessibilité, print...
-                            </li>
-                            <li>
-                                Maîtrise de Photoshop, Illustrator, Indesign,
-                                Première Pro, After Effects, WordPress, HTML,
-                                CSS.
-                            </li>
-                        </ul>
-                    </div>
-                    <div
-                        class="w-full border-l-8 border-red-pink-200 bg-gradient-to-br from-red-pink-100 to-red-pink-50 pr-2 shadow-light-default"
-                    >
                         <div
-                            class="grid grid-cols-[1fr] items-center gap-5 pt-4"
+                            class="w-full border-l-8 border-red-pink-200 bg-gradient-to-br from-red-pink-100 to-red-pink-50 pr-2 shadow-light-default"
                         >
-                            <span
-                                class="rounded-e-full bg-red-pink-200 px-7 py-2 text-xs font-bold tracking-[3px] text-red-pink-950 shadow-light-default"
-                                >2022 à 2023</span
+                            <div
+                                class="grid grid-cols-[1fr] items-center gap-5 pt-4"
                             >
-                            <div class="pl-4">
-                                <h3
-                                    class="font-Patua text-base text-red-pink-400 md:text-lg"
-                                >
-                                    Développeur Web et Web Mobile
-                                </h3>
                                 <span
-                                    class="text-xs uppercase tracking-[1px] text-red-pink-700"
-                                    >La Manu - Amiens</span
+                                    class="rounded-e-full bg-red-pink-200 px-7 py-2 text-xs font-bold tracking-[3px] text-red-pink-950 shadow-light-default"
+                                    >2022 à 2023</span
                                 >
+                                <div class="pl-4">
+                                    <h3
+                                        class="font-Patua text-base text-red-pink-400 md:text-lg"
+                                    >
+                                        Développeur Web et Web Mobile
+                                    </h3>
+                                    <span
+                                        class="text-xs uppercase tracking-[1px] text-red-pink-700"
+                                        >La Manu - Amiens</span
+                                    >
+                                </div>
                             </div>
-                        </div>
-                        <ul
-                            class="list-inside list-disc p-4 text-sm leading-relaxed text-red-pink-950 md:text-base"
-                        >
-                            <li>
-                                Languages HTML, CSS, Bootstrap, JavaScript, PHP,
-                                SQL, Merise, Wordpress.
-                            </li>
-                            <li>
-                                Maquettage, UX design, Responsive design, SEO,
-                                stage de 40h en entreprise.
-                            </li>
-                            <li>
-                                Conception d'une plateforme E-learning en lien
-                                avec l'apprentissage du dessin.
-                            </li>
-                        </ul>
-                    </div>
-                    <div
-                        class="hidden w-full border-l-8 border-red-pink-200 bg-gradient-to-br from-red-pink-100 to-red-pink-50 pr-2 shadow-light-default"
-                    >
-                        <div
-                            class="grid grid-cols-[1fr] items-center gap-5 pt-4"
-                        >
-                            <span
-                                class="rounded-e-full bg-red-pink-200 px-7 py-2 text-xs font-bold tracking-[3px] text-red-pink-950 shadow-light-default"
-                                >2019 à 2021</span
+                            <ul
+                                class="list-inside list-disc p-4 text-sm leading-relaxed text-red-pink-950 md:text-base"
                             >
-                            <div class="pl-4">
-                                <h3
-                                    class="font-Patua text-base text-red-pink-400 md:text-lg"
-                                >
-                                    Gestionnaire de stocks
-                                </h3>
-                                <span
-                                    class="text-xs uppercase tracking-[1px] text-red-pink-700"
-                                    >Laboratoire Bioamiens - Amiens</span
-                                >
-                            </div>
+                                <li>
+                                    Languages HTML, CSS, Bootstrap, JavaScript,
+                                    PHP, SQL, Merise, Wordpress.
+                                </li>
+                                <li>
+                                    Maquettage, UX design, Responsive design,
+                                    SEO, stage de 40h en entreprise.
+                                </li>
+                                <li>
+                                    Conception d'une plateforme E-learning en
+                                    lien avec l'apprentissage du dessin.
+                                </li>
+                            </ul>
                         </div>
-                        <ul
-                            class="list-inside list-disc p-4 text-sm leading-relaxed text-red-pink-950 md:text-base"
-                        >
-                            <li>Utilisation du logiciel Kalilab.</li>
-                            <li>
-                                Réceptionner, stocker et gérer les produits pour
-                                les techniciens et infirmières.
-                            </li>
-                            <li>
-                                Commander les produits. Vérifier la conformiter
-                                des produits. Faire la réappro.
-                            </li>
-                        </ul>
-                    </div>
-                    <div
-                        class="hidden w-full border-l-8 border-red-pink-200 bg-gradient-to-br from-red-pink-100 to-red-pink-50 pr-2 shadow-light-default"
-                    >
-                        <div
-                            class="grid grid-cols-[1fr] items-center gap-5 pt-4"
-                        >
-                            <span
-                                class="rounded-e-full bg-red-pink-200 px-7 py-2 text-xs font-bold tracking-[3px] text-red-pink-950 shadow-light-default"
-                                >2013 à 2018</span
-                            >
-                            <div class="pl-4">
-                                <h3
-                                    class="font-Patua text-base text-red-pink-400 md:text-lg"
-                                >
-                                    Saisonnière polyvalente
-                                </h3>
-                                <span
-                                    class="text-xs uppercase tracking-[1px] text-red-pink-700"
-                                    >Club Med et divers hôtels**** indépendants
-                                    - Les Alpes</span
-                                >
-                            </div>
-                        </div>
-                        <ul
-                            class="list-inside list-disc p-4 text-sm leading-relaxed text-red-pink-950 md:text-base"
-                        >
-                            <li>
-                                Rapidité, efficacité, esprit d'équipe, organisé,
-                                discrétion.
-                            </li>
-                            <li>
-                                Gérer une équipe. Entretenir les chambres.
-                                Gestion des plannings.
-                            </li>
-                            <li>
-                                Changer les draps. Faire les lits.
-                                Reaprovisionner les chambres en produits
-                                consommables. Effectuer ménage complet.
-                            </li>
-                        </ul>
-                    </div>
-                    <div
-                        class="hidden w-full border-l-8 border-red-pink-200 bg-gradient-to-br from-red-pink-100 to-red-pink-50 pr-2 shadow-light-default"
-                    >
-                        <div
-                            class="grid grid-cols-[1fr] items-center gap-5 pt-4"
-                        >
-                            <span
-                                class="rounded-e-full bg-red-pink-200 px-7 py-2 text-xs font-bold tracking-[3px] text-red-pink-950 shadow-light-default"
-                                >2005 à 2013</span
-                            >
-                            <div class="pl-4">
-                                <h3
-                                    class="font-Patua text-base text-red-pink-400 md:text-lg"
-                                >
-                                    Femme de chambre
-                                </h3>
-                                <span
-                                    class="text-xs uppercase tracking-[1px] text-red-pink-700"
-                                    >Intérimaire - Belgique</span
-                                >
-                            </div>
-                        </div>
-                        <ul
-                            class="list-inside list-disc p-4 text-sm leading-relaxed text-red-pink-950 md:text-base"
-                        >
-                            <li>
-                                Rapidité, efficacité, esprit d'équipe, organisé,
-                                discrétion.
-                            </li>
-                            <li>
-                                Gérer une équipe. Entretenir les chambres.
-                                Gestion des plannings.
-                            </li>
-                            <li>
-                                Changer les draps. Faire les lits.
-                                Reaprovisionner les chambres en produits
-                                consommables. Effectuer ménage complet.
-                            </li>
-                        </ul>
                     </div>
                 </div>
+                <section id="experiences" class="tab-content hidden">
+                    <h2
+                        class="mb-5 text-center font-Patua text-lg text-red-pink-600 sm:mb-10 md:text-2xl"
+                    >
+                        Mon expérience
+                    </h2>
+                </section>
+                <section id="skills-job" class="tab-content hidden">
+                    <h2
+                        class="mb-5 text-center font-Patua text-lg text-red-pink-600 sm:mb-10 md:text-2xl"
+                    >
+                        Mes compétences
+                    </h2>
+                </section>
+                <section id="values" class="tab-content hidden">
+                    <h2
+                        class="mb-5 text-center font-Patua text-lg text-red-pink-600 sm:mb-10 md:text-2xl"
+                    >
+                        Mes valeurs
+                    </h2>
+                </section>
             </section>
             <section class="my-16 flex flex-col items-center lg:items-start">
                 <span
@@ -1128,7 +1042,7 @@
                             >Projets</a
                         >
                         <a
-                            href="#contact"
+                            href="mailto:orangestreet@live.fr"
                             class="mb-7 text-xs text-red-pink-950 transition-colors duration-300 lg:mb-4 lg:text-base lg:hover:text-red-600"
                             >Contact</a
                         >
@@ -1162,5 +1076,6 @@
                 Copyright 2024 Vanoverberghe Stéphanie. Tous droits réservés.
             </p>
         </footer>
+        <script src="src/js/utils/tab.js"></script>
     </body>
 </html>
