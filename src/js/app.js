@@ -5,7 +5,7 @@ const projectApi = new ProjectApi('src/data/projects.json');
 const aboutApi = new AboutApi('src/data/about.json');
 
 document.addEventListener('DOMContentLoaded', async () => {
-    // Gestion des projets
+
     const projectsContainer = document.querySelector('#projects-container');
     const projects = await projectApi.getProjects();
 
@@ -43,7 +43,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectsContainer.appendChild(projectElement);
     });
 
-    // Gestion des données "A propos"
     const { courses, experiences, skills, values } = await aboutApi.getAboutData();
 
     const coursesContainer = document.getElementById('courses');
