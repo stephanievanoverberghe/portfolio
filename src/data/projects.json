@@ -1,0 +1,68 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "title": "Formations Dessin",
+            "description": "Création d’un site web sur l’apprentissage du dessin. Réalisation de A à Z, de la gestion de projet à la création de la base de données.",
+            "image": "src/assets/img/mockup-formations-dessin-light.jpg",
+            "skills": ["figma", "javascript", "php", "sql"],
+            "category": "Développement",
+            "details": {
+                "introduction": "Projet pour apprendre le dessin.",
+                "objective": "Réaliser un site complet pour des cours de dessin.",
+                "technologies": ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
+                "duration": "6 mois",
+                "role": "Développeur principal"
+            },
+            "link": "pages/project.html?id=1"
+        },
+        {
+            "id": 2,
+            "title": "Immo Prestige",
+            "description": "Création d’un site web pour une agence immobilière de luxe.",
+            "image": "src/assets/img/mockup-immo-prestige-light.jpg",
+            "skills": ["figma", "react", "redux"],
+            "category": "Développement",
+            "details": {
+                "introduction": "Projet pour une agence immobilière.",
+                "objective": "Développer un site web attractif pour des biens immobiliers de prestige.",
+                "technologies": ["React", "Redux", "CSS"],
+                "duration": "4 mois",
+                "role": "Développeur front-end"
+            },
+            "link": "pages/project.html?id=2"
+        },
+        {
+            "id": 3,
+            "title": "Norel Art",
+            "description": "Création des maquettes entièrement responsives.",
+            "image": "src/assets/img/mockup-norel-art-light.jpg",
+            "skills": ["figma", "photoshop", "illustrator"],
+            "category": "Design UX/UI",
+            "details": {
+                "introduction": "Projet de design pour une galerie d'art.",
+                "objective": "Concevoir des maquettes responsives pour un site de galerie d'art.",
+                "technologies": ["Figma", "Photoshop", "Illustrator"],
+                "duration": "3 mois",
+                "role": "UI/UX Designer"
+            },
+            "link": "pages/project.html?id=3"
+        },
+        {
+            "id": 4,
+            "title": "Mystères à la Carte",
+            "description": "Élaboration de la charte graphique.",
+            "image": "src/assets/img/mockup-mysteres-a-la-carte-light.png",
+            "skills": ["figma", "photoshop", "illustrator"],
+            "category": "Branding",
+            "details": {
+                "introduction": "Projet de branding pour un restaurant à thème.",
+                "objective": "Créer une charte graphique complète pour un nouveau restaurant.",
+                "technologies": ["Figma", "Photoshop", "Illustrator"],
+                "duration": "2 mois",
+                "role": "Graphiste"
+            },
+            "link": "pages/project.html?id=4"
+        }
+    ]
+}

@@ -277,9 +277,8 @@
                 <div class="text-center sm:text-left">
                     <span
                         class="text-xs uppercase tracking-[3px] text-red-pink-900 md:text-sm"
+                        >En savoir plus sur moi ?</span
                     >
-                        En savoir plus sur moi ?
-                    </span>
                     <h2 class="mb-5 font-Patua text-lg sm:mb-10 md:text-2xl">
                         C'est
                         <span class="text-red-pink-400"> ici </span>
@@ -293,48 +292,33 @@
                         class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4"
                     >
                         <li
-                            class="flex h-12 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 text-sm font-bold text-red-pink-600 shadow-light-pressed md:text-base lg:cursor-pointer"
+                            class="tab-link active flex h-12 items-center justify-center rounded-md bg-red-pink-50 text-sm font-bold text-red-pink-600 shadow-light-pressed md:text-base lg:cursor-pointer"
+                            data-tab="courses"
                         >
-                            <a
-                                href="#courses"
-                                class="tab-link p-8"
-                                data-tab="courses"
-                                >Mon parcours</a
-                            >
+                            Mon parcours
                         </li>
                         <li
-                            class="group flex h-12 transform items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 text-sm font-bold shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed md:text-base lg:cursor-pointer lg:hover:shadow-light-pressed"
+                            class="tab-link group flex h-12 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 text-sm font-bold shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed md:text-base lg:cursor-pointer"
+                            data-tab="experiences"
                         >
-                            <a
-                                href="#experiences"
-                                class="tab-link transform transition-transform duration-300 ease-in-out group-hover:scale-90"
-                                data-tab="experiences"
-                                >Mon expérience</a
-                            >
+                            Mon expérience
                         </li>
                         <li
-                            class="group flex h-12 transform items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 text-sm font-bold shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed md:text-base lg:cursor-pointer lg:hover:shadow-light-pressed"
+                            class="tab-link group flex h-12 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 text-sm font-bold shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed md:text-base lg:cursor-pointer"
+                            data-tab="skills-job"
                         >
-                            <a
-                                href="#skills-job"
-                                class="tab-link transform transition-transform duration-300 ease-in-out group-hover:scale-90"
-                                data-tab="skills-job"
-                                >Mes compétences</a
-                            >
+                            Mes compétences
                         </li>
                         <li
-                            class="group flex h-12 transform items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 text-sm font-bold shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed md:text-base lg:cursor-pointer lg:hover:shadow-light-pressed"
+                            class="tab-link group flex h-12 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 text-sm font-bold shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed md:text-base lg:cursor-pointer"
+                            data-tab="values"
                         >
-                            <a
-                                href="#values"
-                                class="tab-link transform transition-transform duration-300 ease-in-out group-hover:scale-90"
-                                data-tab="values"
-                                >Mes valeurs</a
-                            >
+                            Mes valeurs
                         </li>
                     </ul>
                 </nav>
-                <div id="courses" class="tab-content active">
+
+                <div id="courses" class="tab-content">
                     <h2
                         class="mb-5 text-center font-Patua text-lg text-red-pink-600 sm:mb-10 md:text-2xl"
                     >
@@ -464,28 +448,32 @@
                         </div>
                     </div>
                 </div>
-                <section id="experiences" class="tab-content hidden">
+                <div id="experiences" class="tab-content hidden">
                     <h2
                         class="mb-5 text-center font-Patua text-lg text-red-pink-600 sm:mb-10 md:text-2xl"
                     >
                         Mon expérience
                     </h2>
-                </section>
-                <section id="skills-job" class="tab-content hidden">
+                    <!-- Contenu de "Mon expérience" -->
+                </div>
+                <div id="skills-job" class="tab-content hidden">
                     <h2
                         class="mb-5 text-center font-Patua text-lg text-red-pink-600 sm:mb-10 md:text-2xl"
                     >
                         Mes compétences
                     </h2>
-                </section>
-                <section id="values" class="tab-content hidden">
+                    <!-- Contenu de "Mes compétences" -->
+                </div>
+                <div id="values" class="tab-content hidden">
                     <h2
                         class="mb-5 text-center font-Patua text-lg text-red-pink-600 sm:mb-10 md:text-2xl"
                     >
                         Mes valeurs
                     </h2>
-                </section>
+                    <!-- Contenu de "Mes valeurs" -->
+                </div>
             </section>
+
             <section class="my-16 flex flex-col items-center lg:items-start">
                 <span
                     class="text-xs uppercase tracking-[3px] text-red-pink-900 md:text-sm"
@@ -499,346 +487,9 @@
                 </h2>
                 <!-- Articles décrivant les projets réalisés -->
                 <div
+                    id="projects-container"
                     class="flex auto-rows-fr flex-col gap-8 sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
-                >
-                    <!-- PROJECT 1 -->
-                    <a href="pages/project.html">
-                        <article
-                            class="group relative flex h-96 flex-col justify-between overflow-hidden rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default"
-                        >
-                            <div
-                                class="relative h-full overflow-hidden rounded-lg"
-                            >
-                                <img
-                                    src="src/assets/img/mockup-formations-dessin-light.jpg"
-                                    alt=""
-                                    class="h-full w-full object-cover"
-                                />
-
-                                <div
-                                    class="absolute inset-0 bg-red-pink-300 opacity-25"
-                                ></div>
-                            </div>
-                            <div
-                                class="absolute inset-0 flex flex-col justify-between lg:translate-y-full lg:transform lg:transition-transform lg:duration-500 lg:group-hover:translate-y-0"
-                            >
-                                <div
-                                    class="flex h-32 items-center justify-center rounded-t-lg"
-                                >
-                                    <div class="rounded-lg bg-red-pink-50">
-                                        <h3
-                                            class="p-5 font-Patua text-base md:text-lg"
-                                        >
-                                            Formations Dessin
-                                        </h3>
-                                    </div>
-                                </div>
-                                <div
-                                    class="rounded-b-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default"
-                                >
-                                    <h4
-                                        class="font-Patua text-sm uppercase tracking-[1px] text-red-pink-600 md:text-base"
-                                    >
-                                        Développement
-                                    </h4>
-                                    <p
-                                        class="mb-5 mt-3 text-sm leading-relaxed md:text-base"
-                                    >
-                                        Création d’un site web sur
-                                        l’apprentissage du dessin. Réalisation
-                                        de A à Z, de la gestion de projet à la
-                                        création de la base de données.
-                                    </p>
-                                    <div class="flex gap-4 md:gap-6">
-                                        <div
-                                            class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
-                                        >
-                                            <img
-                                                class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                                src="src/assets/img/figma.png"
-                                                alt=""
-                                            />
-                                        </div>
-                                        <div
-                                            class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
-                                        >
-                                            <img
-                                                class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                                src="src/assets/img/javascript.png"
-                                                alt=""
-                                            />
-                                        </div>
-                                        <div
-                                            class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
-                                        >
-                                            <img
-                                                class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                                src="src/assets/img/php.png"
-                                                alt=""
-                                            />
-                                        </div>
-                                        <div
-                                            class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
-                                        >
-                                            <img
-                                                class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                                src="src/assets/img/sql.png"
-                                                alt=""
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </a>
-
-                    <!-- PROJECT 2 -->
-                    <a href="pages/project.html">
-                        <article
-                            class="group relative flex h-96 flex-col justify-between overflow-hidden rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default"
-                        >
-                            <div
-                                class="relative h-full overflow-hidden rounded-lg"
-                            >
-                                <img
-                                    src="src/assets/img/mockup-immo-prestige-light.jpg"
-                                    alt=""
-                                    class="h-full w-full object-cover"
-                                />
-
-                                <div
-                                    class="absolute inset-0 bg-red-pink-300 opacity-25"
-                                ></div>
-                            </div>
-                            <div
-                                class="absolute inset-0 flex flex-col justify-between transition-transform duration-500 lg:translate-y-full lg:transform lg:group-hover:translate-y-0"
-                            >
-                                <div
-                                    class="flex h-32 items-center justify-center rounded-t-lg"
-                                >
-                                    <div class="rounded-lg bg-red-pink-50">
-                                        <h3
-                                            class="p-5 font-Patua text-base md:text-lg"
-                                        >
-                                            Immo Prestige
-                                        </h3>
-                                    </div>
-                                </div>
-                                <div
-                                    class="rounded-b-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default"
-                                >
-                                    <h4
-                                        class="font-Patua text-sm uppercase tracking-[1px] text-red-pink-600 md:text-base"
-                                    >
-                                        Développement
-                                    </h4>
-                                    <p
-                                        class="mb-5 mt-3 text-sm leading-relaxed md:text-base"
-                                    >
-                                        Création d’un site web sur
-                                        l’apprentissage du dessin. Réalisation
-                                        de A à Z, de la gestion de projet à la
-                                        création de la base de données.
-                                    </p>
-                                    <div class="flex gap-4 md:gap-6">
-                                        <div
-                                            class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
-                                        >
-                                            <img
-                                                class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                                src="src/assets/img/figma.png"
-                                                alt=""
-                                            />
-                                        </div>
-                                        <div
-                                            class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
-                                        >
-                                            <img
-                                                class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                                src="src/assets/img/react.png"
-                                                alt=""
-                                            />
-                                        </div>
-                                        <div
-                                            class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
-                                        >
-                                            <img
-                                                class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                                src="src/assets/img/redux.png"
-                                                alt=""
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </a>
-                    <!-- PROJECT 3 -->
-                    <a href="pages/project.html">
-                        <article
-                            class="group relative flex h-96 flex-col justify-between overflow-hidden rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default"
-                        >
-                            <div
-                                class="relative h-full overflow-hidden rounded-lg"
-                            >
-                                <img
-                                    src="src/assets/img/mockup-norel-art-light.jpg"
-                                    alt=""
-                                    class="h-full w-full object-cover"
-                                />
-
-                                <div
-                                    class="absolute inset-0 bg-red-pink-300 opacity-25"
-                                ></div>
-                            </div>
-                            <div
-                                class="absolute inset-0 flex flex-col justify-between transition-transform duration-500 lg:translate-y-full lg:transform lg:group-hover:translate-y-0"
-                            >
-                                <div
-                                    class="flex h-32 items-center justify-center rounded-t-lg"
-                                >
-                                    <div class="rounded-lg bg-red-pink-50">
-                                        <h3
-                                            class="p-5 font-Patua text-base md:text-lg"
-                                        >
-                                            Norel Art
-                                        </h3>
-                                    </div>
-                                </div>
-                                <div
-                                    class="rounded-b-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default"
-                                >
-                                    <h4
-                                        class="font-Patua text-sm uppercase tracking-[1px] text-red-pink-600 md:text-base"
-                                    >
-                                        UX/UI design
-                                    </h4>
-                                    <p
-                                        class="mb-5 mt-3 text-sm leading-relaxed md:text-base"
-                                    >
-                                        Création des maquettes entièrement
-                                        responsives. Réalisation de A à Z, de la
-                                        gestion de projet à la conception des
-                                        maquettes.
-                                    </p>
-                                    <div class="flex gap-4 md:gap-6">
-                                        <div
-                                            class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
-                                        >
-                                            <img
-                                                class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                                src="src/assets/img/figma.png"
-                                                alt=""
-                                            />
-                                        </div>
-                                        <div
-                                            class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
-                                        >
-                                            <img
-                                                class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                                src="src/assets/img/photoshop.png"
-                                                alt=""
-                                            />
-                                        </div>
-                                        <div
-                                            class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
-                                        >
-                                            <img
-                                                class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                                src="src/assets/img/illustrator.png"
-                                                alt=""
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </a>
-                    <!-- PROJECT 4 -->
-                    <a
-                        href="pages/project.html"
-                        class="hidden sm:block lg:hidden xl:block"
-                    >
-                        <article
-                            class="group relative flex h-96 flex-col justify-between overflow-hidden rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default"
-                        >
-                            <div
-                                class="relative h-full overflow-hidden rounded-lg"
-                            >
-                                <img
-                                    src="src/assets/img/mockup-mysteres-a-la-carte-light.png"
-                                    alt=""
-                                    class="h-full w-full object-cover"
-                                />
-
-                                <div
-                                    class="absolute inset-0 bg-red-pink-300 opacity-25"
-                                ></div>
-                            </div>
-                            <div
-                                class="absolute inset-0 flex flex-col justify-between transition-transform duration-500 lg:translate-y-full lg:transform lg:group-hover:translate-y-0"
-                            >
-                                <div
-                                    class="flex h-32 items-center justify-center rounded-t-lg"
-                                >
-                                    <div class="rounded-lg bg-red-pink-50">
-                                        <h3
-                                            class="p-5 font-Patua text-base md:text-lg"
-                                        >
-                                            Mystères à la Carte
-                                        </h3>
-                                    </div>
-                                </div>
-                                <div
-                                    class="rounded-b-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default"
-                                >
-                                    <h4
-                                        class="font-Patua text-sm uppercase tracking-[1px] text-red-pink-600 md:text-base"
-                                    >
-                                        UX/UI design
-                                    </h4>
-                                    <p
-                                        class="mb-5 mt-3 text-sm leading-relaxed md:text-base"
-                                    >
-                                        Élaboration de la charte graphique. Mise
-                                        en situation du logo sur différents
-                                        mockups : casquettes, affiche
-                                        publicitaire, enseigne...
-                                    </p>
-                                    <div class="flex gap-4 md:gap-6">
-                                        <div
-                                            class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
-                                        >
-                                            <img
-                                                class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                                src="src/assets/img/figma.png"
-                                                alt=""
-                                            />
-                                        </div>
-                                        <div
-                                            class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
-                                        >
-                                            <img
-                                                class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                                src="src/assets/img/photoshop.png"
-                                                alt=""
-                                            />
-                                        </div>
-                                        <div
-                                            class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
-                                        >
-                                            <img
-                                                class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                                src="src/assets/img/illustrator.png"
-                                                alt=""
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </a>
-                </div>
+                ></div>
             </section>
             <section
                 class="my-16 flex flex-col items-center lg:items-start"
@@ -1077,5 +728,6 @@
             </p>
         </footer>
         <script src="src/js/utils/tab.js"></script>
+        <script type="module" src="src/js/app.js"></script>
     </body>
 </html>
