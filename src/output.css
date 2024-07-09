@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.4 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -211,6 +211,8 @@ textarea {
   /* 1 */
   line-height: inherit;
   /* 1 */
+  letter-spacing: inherit;
+  /* 1 */
   color: inherit;
   /* 1 */
   margin: 0;
@@ -234,9 +236,9 @@ select {
 */
 
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -687,6 +689,10 @@ select {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
 }
 
 ::backdrop {
@@ -737,6 +743,10 @@ select {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
 }
 
 .fixed {
@@ -951,14 +961,6 @@ select {
   cursor: pointer;
 }
 
-.list-inside {
-  list-style-position: inside;
-}
-
-.list-disc {
-  list-style-type: disc;
-}
-
 .auto-rows-fr {
   grid-auto-rows: minmax(0, 1fr);
 }
@@ -969,10 +971,6 @@ select {
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-cols-\[1fr\] {
-  grid-template-columns: 1fr;
 }
 
 .grid-cols-\[50px_auto\] {
@@ -1090,10 +1088,6 @@ select {
   border-top-right-radius: 0.5rem;
 }
 
-.border-l-8 {
-  border-left-width: 8px;
-}
-
 .border-t-\[1px\] {
   border-top-width: 1px;
 }
@@ -1107,19 +1101,9 @@ select {
   border-color: rgb(255 228 231 / var(--tw-border-opacity));
 }
 
-.border-red-pink-200 {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 204 212 / var(--tw-border-opacity));
-}
-
 .bg-red-pink-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(255 228 231 / var(--tw-bg-opacity));
-}
-
-.bg-red-pink-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 204 212 / var(--tw-bg-opacity));
 }
 
 .bg-red-pink-300 {
@@ -1159,17 +1143,8 @@ select {
   padding: 0.875rem;
 }
 
-.p-4 {
-  padding: 1rem;
-}
-
 .p-5 {
   padding: 1.25rem;
-}
-
-.px-7 {
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
 }
 
 .px-8 {
@@ -1186,20 +1161,8 @@ select {
   padding-bottom: 6rem;
 }
 
-.pl-4 {
-  padding-left: 1rem;
-}
-
-.pr-2 {
-  padding-right: 0.5rem;
-}
-
 .pt-10 {
   padding-top: 2.5rem;
-}
-
-.pt-4 {
-  padding-top: 1rem;
 }
 
 .pt-8 {

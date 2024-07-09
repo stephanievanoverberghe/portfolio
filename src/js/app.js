@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <div class="w-full border-l-8 border-red-pink-200 bg-gradient-to-br from-red-pink-100 to-red-pink-50 pr-2 shadow-light-default">
                     <div class="grid grid-cols-[1fr] items-center gap-5 pt-4">
                         <span class="rounded-e-full bg-red-pink-200 px-7 py-2 text-xs font-bold tracking-[3px] text-red-pink-950 shadow-light-default">${course.start} à ${course.end}</span>
-                        <div class="pl-4">
+                        <div class="m-4">
                             <h3 class="font-Patua text-base text-red-pink-400 md:text-lg">${course.name}</h3>
                             <span class="text-xs uppercase tracking-[1px] text-red-pink-700">${course.place}</span>
                         </div>
