@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- Préchargement des polices Google -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -16,7 +15,6 @@
             href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap"
             rel="stylesheet"
         />
-        <!-- Chargement des icônes FontAwesome -->
         <script
             src="https://kit.fontawesome.com/33a775bcdb.js"
             crossorigin="anonymous"
@@ -44,7 +42,6 @@
                 <!-- Navigation principale -->
                 <nav class="hidden lg:block">
                     <ul class="flex items-center gap-6">
-                        <!-- Liens de navigation avec effets visuels -->
                         <li
                             class="group transform cursor-pointer rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 font-bold shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed"
                         >
@@ -52,15 +49,6 @@
                                 href="../index.html"
                                 class="block h-full w-full transform px-8 py-2 transition-transform duration-300 ease-in-out group-hover:scale-90"
                                 >A propos</a
-                            >
-                        </li>
-                        <li
-                            class="group transform cursor-pointer rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 font-bold text-red-pink-600 shadow-light-pressed transition-transform duration-300 ease-in-out hover:scale-95"
-                        >
-                            <a
-                                href="../pages/projects.html"
-                                class="block h-full w-full transform px-8 py-2 transition-transform duration-300 ease-in-out group-hover:scale-90"
-                                >Projets</a
                             >
                         </li>
                         <li
@@ -72,11 +60,19 @@
                                 >Compétences</a
                             >
                         </li>
+                        <li
+                            class="group transform cursor-pointer rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 font-bold text-red-pink-600 shadow-light-pressed transition-transform duration-300 ease-in-out hover:scale-95"
+                        >
+                            <a
+                                href="../pages/projects.html"
+                                class="block h-full w-full transform px-8 py-2 transition-transform duration-300 ease-in-out group-hover:scale-90"
+                                >Projets</a
+                            >
+                        </li>
                     </ul>
                 </nav>
                 <!-- Composants à droite du header -->
                 <div class="flex items-center gap-6">
-                    <!-- Bouton du menu hamburger pour mobile -->
                     <div class="block lg:hidden">
                         <button
                             class="mx-4 flex h-10 w-10 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default"
@@ -84,7 +80,6 @@
                             <i class="fa-solid fa-bars fa-xl"></i>
                         </button>
                     </div>
-                    <!-- Lien vers la page de contact avec animation et mailto -->
                     <a
                         href="mailto:orangestreet@live.fr"
                         class="hidden h-[68px] transform rounded-e-full bg-red-pink-50 p-5 shadow-light-default transition-transform duration-500 ease-in-out hover:scale-105 hover:shadow-light-pressed lg:block"
@@ -98,7 +93,6 @@
             <header
                 class="fixed bottom-0 z-50 flex w-full items-center justify-around border-t-[1px] border-red-pink-100 bg-red-pink-50 p-3.5 shadow-shadow-header sm:hidden"
             >
-                <!-- Icônes pour la navigation mobile -->
                 <div class="flex flex-col items-center justify-center">
                     <a
                         href="../index.html"
@@ -131,17 +125,16 @@
             <section
                 class="mx-3 items-center justify-center sm:mx-6 md:mx-10 md:mt-5 lg:flex"
             >
-                <!-- Image hero pour mobile -->
                 <div
                     class="flex h-64 items-center justify-center rounded-b-[50px] bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default sm:hidden"
                 >
                     <img
                         class="max-w-60 rounded-[42px] bg-gradient-to-br from-red-pink-100 to-red-pink-50 pt-10 shadow-light-default"
-                        src="../src/assets/img/infographie-03.png"
-                        alt=""
+                        id="project-image"
+                        src=""
+                        alt="Project Image"
                     />
                 </div>
-                <!-- Texte de présentation -->
                 <div
                     class="mx-3 my-16 flex flex-col items-center justify-center sm:mx-6 xl:mx-0"
                 >
@@ -152,18 +145,19 @@
                     <h1
                         class="mb-4 mt-5 text-center font-Patua text-2xl md:mb-10 md:mt-7 md:text-4xl lg:text-start"
                     >
-                        Formations
-                        <span class="text-red-pink-600">Dessin</span>
+                        <span id="project-title">Title</span>
                     </h1>
                     <a
-                        href=""
+                        id="project-link"
+                        href="#"
                         class="mb-5 text-center text-xs uppercase tracking-[3px] text-red-pink-900 md:text-sm lg:cursor-pointer lg:transition-colors lg:duration-300 lg:hover:text-red-pink-700"
                         >Voir le site web</a
                     >
-                    <div class="">
+                    <div>
                         <img
-                            src="../src/assets/img/mockup-formations-dessin-light.jpg"
-                            alt=""
+                            id="project-hero-image"
+                            src=""
+                            alt="Project Hero Image"
                             class="h-full w-full rounded-xl object-cover shadow-light-default"
                         />
                     </div>
@@ -174,28 +168,16 @@
             <section class="my-16 flex flex-col items-center justify-center">
                 <span
                     class="text-xs uppercase tracking-[3px] text-red-pink-900 md:text-sm"
+                    >Créer un site web e-learning</span
                 >
-                    Créer un site web e-learning
-                </span>
                 <h2 class="mb-5 font-Patua text-lg sm:mb-10 md:text-2xl">
-                    Résumé du
-                    <span class="text-red-pink-400"> projet </span>
-                    .
+                    Résumé du <span class="text-red-pink-400"> projet </span>.
                 </h2>
                 <h3 class="font-Patua text-base text-red-pink-600 md:text-lg">
                     Objectif du projet
                 </h3>
-                <div class="mt-3 space-y-2">
-                    <p>
-                        Le projet vise à développer un site web éducatif offrant
-                        des formations vidéo sur les bases du dessin,
-                        spécialement conçues pour les débutants.
-                    </p>
-                    <p>
-                        L'objectif est de fournir une structure d'apprentissage
-                        accessible et compréhensible, accompagnée d'un suivi
-                        personnalisé pour chaque utilisateur.
-                    </p>
+                <div class="mt-3 space-y-2" id="project-objective">
+                    <!-- Objective Content -->
                 </div>
                 <h3
                     class="mb-5 mt-10 font-Patua text-base text-red-pink-600 md:text-lg"
@@ -204,713 +186,57 @@
                 </h3>
                 <div
                     class="flex w-full flex-col gap-8 sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+                    id="project-functionalities"
                 >
-                    <article
-                        class="rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default"
-                    >
-                        <h4
-                            class="mb-3 font-Patua text-sm text-red-pink-700 lg:text-base"
-                        >
-                            Inscription et connexion
-                        </h4>
-                        <ul class="my-3 text-sm leading-relaxed md:text-base">
-                            <li class="mb-2">
-                                <span class="font-bold">Page d'accueil</span>
-                                : Accueil convivial permettant aux utilisateurs
-                                de s'inscrire facilement au site.
-                            </li>
-                            <li>
-                                <span class="font-bold"
-                                    >Profil utilisateur</span
-                                >
-                                : Une fois inscrit et connecté, l'utilisateur
-                                peut accéder à sa page de profil où il peut
-                                modifier ses informations personnelles ou
-                                supprimer son compte.
-                            </li>
-                        </ul>
-                    </article>
-                    <article
-                        class="rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default"
-                    >
-                        <h4
-                            class="mb-3 font-Patua text-sm text-red-pink-700 lg:text-base"
-                        >
-                            Accès aux formations
-                        </h4>
-                        <ul class="my-3 text-sm leading-relaxed md:text-base">
-                            <li>
-                                <span class="font-bold">Page de formation</span>
-                                : Les utilisateurs connectés peuvent accéder à
-                                une série de vidéos pédagogiques sur le dessin,
-                                structurées pour un apprentissage progressif.
-                            </li>
-                        </ul>
-                    </article>
-                    <article
-                        class="rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default"
-                    >
-                        <h4
-                            class="mb-3 font-Patua text-sm text-red-pink-700 lg:text-base"
-                        >
-                            Forums publics et privés
-                        </h4>
-                        <ul class="my-3 text-sm leading-relaxed md:text-base">
-                            <li class="mb-2">
-                                <span class="font-bold">Général</span>
-                                : Accessible sans inscription, permettant de
-                                partager des dessins et des discussions
-                                générales.
-                            </li>
-                            <li>
-                                <span class="font-bold">Formation</span>
-                                : Réservé aux utilisateurs inscrits, pour des
-                                échanges spécifiques sur les cours suivis.
-                            </li>
-                        </ul>
-                    </article>
-                    <article
-                        class="rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default"
-                    >
-                        <h4
-                            class="mb-3 font-Patua text-sm text-red-pink-700 lg:text-base"
-                        >
-                            Magazine en ligne
-                        </h4>
-                        <ul class="my-3 text-sm leading-relaxed md:text-base">
-                            <li>
-                                <span class="font-bold"
-                                    >Articles informatifs</span
-                                >
-                                : Une collection d'articles sur les techniques
-                                de dessin, les outils, et l'histoire de l'art,
-                                accessible à tous les visiteurs pour enrichir
-                                leur culture artistique.
-                            </li>
-                        </ul>
-                    </article>
-                    <article
-                        class="rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default"
-                    >
-                        <h4
-                            class="mb-3 font-Patua text-sm text-red-pink-700 lg:text-base"
-                        >
-                            FAQ et support
-                        </h4>
-                        <ul class="my-3 text-sm leading-relaxed md:text-base">
-                            <li>
-                                <span class="font-bold"
-                                    >Foire aux questions</span
-                                >
-                                : Une section dédiée pour répondre aux
-                                interrogations les plus courantes des
-                                utilisateurs.
-                            </li>
-                        </ul>
-                    </article>
-                    <article
-                        class="rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default"
-                    >
-                        <h4
-                            class="mb-3 font-Patua text-sm text-red-pink-700 lg:text-base"
-                        >
-                            Adaptabilité et responsivité
-                        </h4>
-                        <ul class="my-3 text-sm leading-relaxed md:text-base">
-                            <li>
-                                <span class="font-bold">Multiplateforme</span>
-                                : Le site s'adapte à différents types d'écrans
-                                (ordinateurs, smartphones, tablettes) et
-                                navigateurs, garantissant une expérience
-                                utilisateur optimale en mode portrait ou
-                                paysage.
-                            </li>
-                        </ul>
-                    </article>
+                    <!-- Functionalities Content -->
                 </div>
             </section>
             <section class="my-16 flex flex-col items-center justify-center">
                 <span
                     class="text-xs uppercase tracking-[3px] text-red-pink-900 md:text-sm"
+                    >Détails du projet</span
                 >
-                    Détails du projet
-                </span>
                 <h2 class="mb-5 font-Patua text-lg sm:mb-10 md:text-2xl">
                     Technologies et détails
-                    <span class="text-red-pink-400"> techniques </span>
-                    .
+                    <span class="text-red-pink-400"> techniques </span>.
                 </h2>
                 <div
                     class="grid grid-cols-1 md:grid-cols-2 md:gap-x-5 lg:grid-cols-3 lg:gap-x-10 xl:grid-cols-4 xl:gap-x-20"
+                    id="project-tools"
                 >
-                    <div>
-                        <span
-                            class="text-xs font-semibold uppercase tracking-[1px] text-red-pink-900 md:text-sm"
-                        >
-                            Gestion de projet
-                        </span>
-                        <div class="mb-5 mt-4 flex gap-2 sm:mb-6 md:gap-3">
-                            <button
-                                class="group flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed md:h-16 md:w-16"
-                            >
-                                <img
-                                    class="h-6 w-6 transition-transform duration-300 group-hover:scale-90 md:h-9 md:w-9"
-                                    src="../src/assets/img/trello.png"
-                                    alt="Trello"
-                                />
-                            </button>
-                        </div>
-                    </div>
-
-                    <div>
-                        <span
-                            class="text-xs font-semibold uppercase tracking-[1px] text-red-pink-900 md:text-sm"
-                        >
-                            Outils graphiques
-                        </span>
-                        <div class="mb-5 mt-4 flex gap-2 sm:mb-6 md:gap-3">
-                            <button
-                                class="group flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed md:h-16 md:w-16"
-                            >
-                                <img
-                                    class="h-6 w-6 transition-transform duration-300 group-hover:scale-90 md:h-9 md:w-9"
-                                    src="../src/assets/img/xd.png"
-                                    alt="Adobe XD"
-                                />
-                            </button>
-                            <button
-                                class="group flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed md:h-16 md:w-16"
-                            >
-                                <img
-                                    class="h-6 w-6 transition-transform duration-300 group-hover:scale-90 md:h-9 md:w-9"
-                                    src="../src/assets/img/illustrator.png"
-                                    alt="Adobe Illustrator"
-                                />
-                            </button>
-                            <button
-                                class="group flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed md:h-16 md:w-16"
-                            >
-                                <img
-                                    class="h-6 w-6 transition-transform duration-300 group-hover:scale-90 md:h-9 md:w-9"
-                                    src="../src/assets/img/photoshop.png"
-                                    alt="Adobe Photoshop"
-                                />
-                            </button>
-                            <button
-                                class="group flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed md:h-16 md:w-16"
-                            >
-                                <img
-                                    class="h-6 w-6 transition-transform duration-300 group-hover:scale-90 md:h-9 md:w-9"
-                                    src="../src/assets/img/indesign.png"
-                                    alt="Adobe InDesign"
-                                />
-                            </button>
-                        </div>
-                    </div>
-
-                    <div>
-                        <span
-                            class="text-xs font-semibold uppercase tracking-[1px] text-red-pink-900 md:text-sm"
-                        >
-                            Outils techniques
-                        </span>
-                        <div class="mb-5 mt-4 flex gap-2 sm:mb-6 md:gap-3">
-                            <button
-                                class="group flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed md:h-16 md:w-16"
-                            >
-                                <img
-                                    class="h-6 w-6 transition-transform duration-300 group-hover:scale-90 md:h-9 md:w-9"
-                                    src="../src/assets/img/vs-code.png"
-                                    alt="VS Code"
-                                />
-                            </button>
-                            <button
-                                class="group flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed md:h-16 md:w-16"
-                            >
-                                <img
-                                    class="h-6 w-6 transition-transform duration-300 group-hover:scale-90 md:h-9 md:w-9"
-                                    src="../src/assets/img/github.png"
-                                    alt="GitHub"
-                                />
-                            </button>
-                            <button
-                                class="group flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed md:h-16 md:w-16"
-                            >
-                                <img
-                                    class="h-6 w-6 transition-transform duration-300 group-hover:scale-90 md:h-9 md:w-9"
-                                    src="../src/assets/img/phpmyadmin.png"
-                                    alt="phpMyAdmin"
-                                />
-                            </button>
-                        </div>
-                    </div>
-
-                    <div>
-                        <span
-                            class="text-xs font-semibold uppercase tracking-[1px] text-red-pink-900 md:text-sm"
-                        >
-                            Langages utilisés
-                        </span>
-                        <div class="mb-5 mt-4 flex gap-2 sm:mb-6 md:gap-3">
-                            <button
-                                class="group flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed md:h-16 md:w-16"
-                            >
-                                <img
-                                    class="h-6 w-6 transition-transform duration-300 group-hover:scale-90 md:h-9 md:w-9"
-                                    src="../src/assets/img/bootstrap.png"
-                                    alt="Bootstrap"
-                                />
-                            </button>
-                            <button
-                                class="group flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed md:h-16 md:w-16"
-                            >
-                                <img
-                                    class="h-6 w-6 transition-transform duration-300 group-hover:scale-90 md:h-9 md:w-9"
-                                    src="../src/assets/img/javascript.png"
-                                    alt="JavaScript"
-                                />
-                            </button>
-                            <button
-                                class="group flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed md:h-16 md:w-16"
-                            >
-                                <img
-                                    class="h-6 w-6 transition-transform duration-300 group-hover:scale-90 md:h-9 md:w-9"
-                                    src="../src/assets/img/php.png"
-                                    alt="PHP"
-                                />
-                            </button>
-                        </div>
-                    </div>
+                    <!-- Tools Content -->
                 </div>
-                <div class="grid grid-cols-2 gap-x-10"></div>
             </section>
             <section class="my-16 flex flex-col items-center justify-center">
                 <span
                     class="text-xs uppercase tracking-[3px] text-red-pink-900 md:text-sm"
+                    >Les étapes clés</span
                 >
-                    Les étapes clés
-                </span>
                 <h2 class="mb-5 font-Patua text-lg sm:mb-10 md:text-2xl">
                     Processus de
-                    <span class="text-red-pink-400"> développement </span>
-                    .
+                    <span class="text-red-pink-400"> développement </span>.
                 </h2>
                 <div
                     class="flex w-full flex-col gap-8 sm:grid sm:grid-cols-2 lg:grid-cols-3"
+                    id="project-process"
                 >
-                    <!-- Article sur le Design UX -->
-                    <article
-                        class="grid grid-cols-[50px_auto] items-center rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default"
-                    >
-                        <i
-                            class="fa-solid fa-magnifying-glass fa-lg md:fa-xl"
-                        ></i>
-                        <div class="items-center text-red-pink-600">
-                            <h3 class="font-Patua text-base md:text-lg">
-                                Recherche et analyse
-                            </h3>
-                            <ul
-                                class="my-3 text-sm leading-relaxed text-red-pink-800 md:text-base"
-                            >
-                                <li>Identification des besoins</li>
-                                <li>Analyse des concurrents</li>
-                            </ul>
-                        </div>
-                    </article>
-                    <!-- Article sur le Design UI -->
-                    <article
-                        class="grid grid-cols-[50px_auto] items-center rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default"
-                    >
-                        <i class="fa-solid fa-map fa-lg md:fa-xl"></i>
-
-                        <div class="items-center text-red-pink-600">
-                            <h3 class="font-Patua text-base md:text-lg">
-                                Planification
-                            </h3>
-                            <ul
-                                class="my-3 text-sm leading-relaxed text-red-pink-800 md:text-base"
-                            >
-                                <li>Définition des objectifs</li>
-                                <li>Roadmap du projet</li>
-                            </ul>
-                        </div>
-                    </article>
-                    <!-- Article sur le Développement web -->
-                    <article
-                        class="grid grid-cols-[50px_auto] items-center rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default"
-                    >
-                        <i
-                            class="fa-solid fa-wand-magic-sparkles fa-lg md:fa-xl"
-                        ></i>
-
-                        <div class="items-center text-red-pink-600">
-                            <h3 class="font-Patua text-base md:text-lg">
-                                Conception UX/UI
-                            </h3>
-                            <ul
-                                class="my-3 text-sm leading-relaxed text-red-pink-800 md:text-base"
-                            >
-                                <li>Identité visuelle</li>
-                                <li>Wireframes et maquettes</li>
-                                <li>Prototype</li>
-                            </ul>
-                        </div>
-                    </article>
-                    <!-- Article sur le Référencement -->
-                    <article
-                        class="grid grid-cols-[50px_auto] items-center rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default"
-                    >
-                        <i class="fa-solid fa-code fa-lg md:fa-xl"></i>
-
-                        <div class="items-center text-red-pink-600">
-                            <h3 class="font-Patua text-base md:text-lg">
-                                Développement front-end
-                            </h3>
-                            <ul
-                                class="my-3 text-sm leading-relaxed text-red-pink-800 md:text-base"
-                            >
-                                <li>Structure HTML</li>
-                                <li>Stylisation CSS et Bootstrap</li>
-                                <li>Interactivité JavaScript</li>
-                            </ul>
-                        </div>
-                    </article>
-                    <!-- Article sur les Réseaux sociaux -->
-                    <article
-                        class="grid grid-cols-[50px_auto] items-center rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default"
-                    >
-                        <i class="fa-solid fa-code fa-lg md:fa-xl"></i>
-
-                        <div class="items-center text-red-pink-600">
-                            <h3 class="font-Patua text-base md:text-lg">
-                                Développement back-end
-                            </h3>
-                            <ul
-                                class="my-3 text-sm leading-relaxed text-red-pink-800 md:text-base"
-                            >
-                                <li>Langage PHP</li>
-                                <li>Base de données SQL</li>
-                            </ul>
-                        </div>
-                    </article>
-                    <!-- Article sur la Maintenance -->
-                    <article
-                        class="grid grid-cols-[50px_auto] items-center rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default"
-                    >
-                        <i class="fa-solid fa-bug fa-lg md:fa-xl"></i>
-                        <div class="items-center text-red-pink-600">
-                            <h3 class="font-Patua text-base md:text-lg">
-                                Intégration et test
-                            </h3>
-                            <ul
-                                class="my-3 text-sm leading-relaxed text-red-pink-800 md:text-base"
-                            >
-                                <li>Gestion du code source</li>
-                                <li>Tests et débogage</li>
-                            </ul>
-                        </div>
-                    </article>
-                    <!-- Article sur la Maintenance -->
-                    <article
-                        class="grid grid-cols-[50px_auto] items-center rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default"
-                    >
-                        <i class="fa-solid fa-globe fa-lg md:fa-xl"></i>
-                        <div class="items-center text-red-pink-600">
-                            <h3 class="font-Patua text-base md:text-lg">
-                                Déploiement
-                            </h3>
-                            <ul
-                                class="my-3 text-sm leading-relaxed text-red-pink-800 md:text-base"
-                            >
-                                <li>Hébergement</li>
-                                <li>Optimisation des performances</li>
-                            </ul>
-                        </div>
-                    </article>
-                    <!-- Article sur la Maintenance -->
-                    <article
-                        class="grid grid-cols-[50px_auto] items-center rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default"
-                    >
-                        <i class="fa-solid fa-hammer fa-lg md:fa-xl"></i>
-                        <div class="items-center text-red-pink-600">
-                            <h3 class="font-Patua text-base md:text-lg">
-                                Lancement et suivi
-                            </h3>
-                            <ul
-                                class="my-3 text-sm leading-relaxed text-red-pink-800 md:text-base"
-                            >
-                                <li>Lancement</li>
-                                <li>Suivi et maintenance</li>
-                            </ul>
-                        </div>
-                    </article>
+                    <!-- Process Content -->
                 </div>
             </section>
             <section class="my-16 flex flex-col items-center justify-center">
                 <span
                     class="text-xs uppercase tracking-[3px] text-red-pink-900 md:text-sm"
+                    >Ils sont également intéressants</span
                 >
-                    Ils sont également intéressants
-                </span>
                 <h2 class="mb-5 font-Patua text-lg sm:mb-10 md:text-2xl">
                     Voir d'autres
-                    <span class="text-red-pink-400"> projet </span>
-                    .
+                    <span class="text-red-pink-400"> projet </span>.
                 </h2>
                 <div
                     class="flex auto-rows-fr flex-col gap-8 sm:grid sm:grid-cols-2 lg:grid-cols-3"
+                    id="other-projects"
                 >
-                    <!-- PROJECT 1 -->
-                    <a href="project.html">
-                        <article
-                            class="group relative flex h-96 flex-col justify-between overflow-hidden rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default"
-                        >
-                            <div
-                                class="relative h-full overflow-hidden rounded-lg"
-                            >
-                                <img
-                                    src="../src/assets/img/mockup-formations-dessin-light.jpg"
-                                    alt=""
-                                    class="h-full w-full object-cover"
-                                />
-
-                                <div
-                                    class="absolute inset-0 bg-red-pink-300 opacity-25"
-                                ></div>
-                            </div>
-                            <div
-                                class="absolute inset-0 flex flex-col justify-between lg:translate-y-full lg:transform lg:transition-transform lg:duration-500 lg:group-hover:translate-y-0"
-                            >
-                                <div
-                                    class="flex h-32 items-center justify-center rounded-t-lg"
-                                >
-                                    <div class="rounded-lg bg-red-pink-50">
-                                        <h3
-                                            class="p-5 font-Patua text-base md:text-lg"
-                                        >
-                                            Formations Dessin
-                                        </h3>
-                                    </div>
-                                </div>
-                                <div
-                                    class="rounded-b-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default"
-                                >
-                                    <h4
-                                        class="font-Patua text-sm uppercase tracking-[1px] text-red-pink-600 md:text-base"
-                                    >
-                                        Développement
-                                    </h4>
-                                    <p
-                                        class="mb-5 mt-3 text-sm leading-relaxed md:text-base"
-                                    >
-                                        Création d’un site web sur
-                                        l’apprentissage du dessin. Réalisation
-                                        de A à Z, de la gestion de projet à la
-                                        création de la base de données.
-                                    </p>
-                                    <div class="flex gap-4 md:gap-6">
-                                        <div
-                                            class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
-                                        >
-                                            <img
-                                                class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                                src="../src/assets/img/figma.png"
-                                                alt=""
-                                            />
-                                        </div>
-                                        <div
-                                            class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
-                                        >
-                                            <img
-                                                class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                                src="../src/assets/img/javascript.png"
-                                                alt=""
-                                            />
-                                        </div>
-                                        <div
-                                            class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
-                                        >
-                                            <img
-                                                class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                                src="../src/assets/img/php.png"
-                                                alt=""
-                                            />
-                                        </div>
-                                        <div
-                                            class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
-                                        >
-                                            <img
-                                                class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                                src="../src/assets/img/sql.png"
-                                                alt=""
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </a>
-                    <!-- PROJECT 2 -->
-                    <a href="project.html">
-                        <article
-                            class="group relative flex h-96 flex-col justify-between overflow-hidden rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default"
-                        >
-                            <div
-                                class="relative h-full overflow-hidden rounded-lg"
-                            >
-                                <img
-                                    src="../src/assets/img/mockup-immo-prestige-light.jpg"
-                                    alt=""
-                                    class="h-full w-full object-cover"
-                                />
-
-                                <div
-                                    class="absolute inset-0 bg-red-pink-300 opacity-25"
-                                ></div>
-                            </div>
-                            <div
-                                class="absolute inset-0 flex flex-col justify-between transition-transform duration-500 lg:translate-y-full lg:transform lg:group-hover:translate-y-0"
-                            >
-                                <div
-                                    class="flex h-32 items-center justify-center rounded-t-lg"
-                                >
-                                    <div class="rounded-lg bg-red-pink-50">
-                                        <h3
-                                            class="p-5 font-Patua text-base md:text-lg"
-                                        >
-                                            Immo Prestige
-                                        </h3>
-                                    </div>
-                                </div>
-                                <div
-                                    class="rounded-b-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default"
-                                >
-                                    <h4
-                                        class="font-Patua text-sm uppercase tracking-[1px] text-red-pink-600 md:text-base"
-                                    >
-                                        Développement
-                                    </h4>
-                                    <p
-                                        class="mb-5 mt-3 text-sm leading-relaxed md:text-base"
-                                    >
-                                        Création d’un site web sur
-                                        l’apprentissage du dessin. Réalisation
-                                        de A à Z, de la gestion de projet à la
-                                        création de la base de données.
-                                    </p>
-                                    <div class="flex gap-4 md:gap-6">
-                                        <div
-                                            class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
-                                        >
-                                            <img
-                                                class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                                src="../src/assets/img/figma.png"
-                                                alt=""
-                                            />
-                                        </div>
-                                        <div
-                                            class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
-                                        >
-                                            <img
-                                                class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                                src="../src/assets/img/react.png"
-                                                alt=""
-                                            />
-                                        </div>
-                                        <div
-                                            class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
-                                        >
-                                            <img
-                                                class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                                src="../src/assets/img/redux.png"
-                                                alt=""
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </a>
-                    <!-- PROJECT 3 -->
-                    <a href="project.html">
-                        <article
-                            class="group relative flex h-96 flex-col justify-between overflow-hidden rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default"
-                        >
-                            <div
-                                class="relative h-full overflow-hidden rounded-lg"
-                            >
-                                <img
-                                    src="../src/assets/img/mockup-norel-art-light.jpg"
-                                    alt=""
-                                    class="h-full w-full object-cover"
-                                />
-                                <div
-                                    class="absolute inset-0 bg-red-pink-300 opacity-25"
-                                ></div>
-                            </div>
-                            <div
-                                class="absolute inset-0 flex flex-col justify-between transition-transform duration-500 lg:translate-y-full lg:transform lg:group-hover:translate-y-0"
-                            >
-                                <div
-                                    class="flex h-32 items-center justify-center rounded-t-lg"
-                                >
-                                    <div class="rounded-lg bg-red-pink-50">
-                                        <h3
-                                            class="p-5 font-Patua text-base md:text-lg"
-                                        >
-                                            Norel Art
-                                        </h3>
-                                    </div>
-                                </div>
-                                <div
-                                    class="rounded-b-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default"
-                                >
-                                    <h4
-                                        class="font-Patua text-sm uppercase tracking-[1px] text-red-pink-600 md:text-base"
-                                    >
-                                        UX/UI design
-                                    </h4>
-                                    <p
-                                        class="mb-5 mt-3 text-sm leading-relaxed md:text-base"
-                                    >
-                                        Création des maquettes entièrement
-                                        responsives. Réalisation de A à Z, de la
-                                        gestion de projet à la conception des
-                                        maquettes.
-                                    </p>
-                                    <div class="flex gap-4 md:gap-6">
-                                        <div
-                                            class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
-                                        >
-                                            <img
-                                                class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                                src="../src/assets/img/figma.png"
-                                                alt=""
-                                            />
-                                        </div>
-                                        <div
-                                            class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
-                                        >
-                                            <img
-                                                class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                                src="../src/assets/img/photoshop.png"
-                                                alt=""
-                                            />
-                                        </div>
-                                        <div
-                                            class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
-                                        >
-                                            <img
-                                                class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                                src="../src/assets/img/illustrator.png"
-                                                alt=""
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </a>
+                    <!-- Other Projects Content -->
                 </div>
             </section>
         </main>
@@ -920,10 +246,8 @@
             <div
                 class="grid grid-cols-1 grid-rows-2 gap-10 sm:grid-rows-1 md:grid-cols-[200px_auto] md:gap-5 xl:grid-cols-[400px_auto]"
             >
-                <!-- Section logo et liens sociaux -->
                 <div class="flex flex-col items-center justify-center">
                     <a href="./../index.html" title="Accueil">
-                        <!-- Logo clair -->
                         <img
                             src="../src/assets/img/logo-light.png"
                             alt="Logo du portfolio"
@@ -966,7 +290,6 @@
                         </a>
                     </div>
                 </div>
-                <!-- Section des liens -->
                 <div class="flex justify-around">
                     <div
                         class="hidden items-center justify-center sm:flex sm:flex-col sm:items-start sm:justify-start"
@@ -1020,6 +343,6 @@
                 Copyright 2024 Vanoverberghe Stéphanie. Tous droits réservés.
             </p>
         </footer>
-        <script type="module" src="../src/js/app.js"></script>
+        <script type="module" src="../src/js/projectApp.js"></script>
     </body>
 </html>

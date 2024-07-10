@@ -39,6 +39,19 @@ class ProjectApi extends Api {
         const project = data ? data.projects.find(project => project.id == id) : null;
         return project ? new Project(project) : null;
     }
+
+    async getProjectsPaginated(page = 1, limit = 6) {
+        const data = await this.get();
+        if (data) {
+            const start = (page - 1) * limit;
+            const end = page * limit;
+            return {
+                projects: data.projects.slice(start, end).map(project => new Project(project)),
+                total: data.projects.length
+            };
+        }
+        return { projects: [], total: 0 };
+    }
 }
 
 class AboutApi extends Api {

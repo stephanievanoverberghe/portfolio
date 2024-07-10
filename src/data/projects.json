@@ -4,7 +4,7 @@
             "id": 1,
             "title": "Formations Dessin",
             "description": "Création d’un site web sur l’apprentissage du dessin. Réalisation de A à Z, de la gestion de projet à la création de la base de données.",
-            "image": "src/assets/img/mockup-formations-dessin-light.jpg",
+            "image": "../src/assets/img/mockup-formations-dessin-light.jpg",
             "skills": ["figma", "javascript", "php", "sql"],
             "category": "Développement",
             "details": {
@@ -12,7 +12,166 @@
                 "objective": "Réaliser un site complet pour des cours de dessin.",
                 "technologies": ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
                 "duration": "6 mois",
-                "role": "Développeur principal"
+                "role": "Développeur principal",
+                "location": "Paris, France",
+                "liveLink": "https://example.com/formations-dessin",
+                "functionalities": [
+                    {
+                        "title": "Inscription et connexion",
+                        "features": [
+                            "Page d'accueil: Accueil convivial permettant aux utilisateurs de s'inscrire facilement au site.",
+                            "Profil utilisateur: Une fois inscrit et connecté, l'utilisateur peut accéder à sa page de profil où il peut modifier ses informations personnelles ou supprimer son compte."
+                        ]
+                    },
+                    {
+                        "title": "Accès aux formations",
+                        "features": [
+                            "Page de formation: Les utilisateurs connectés peuvent accéder à une série de vidéos pédagogiques sur le dessin, structurées pour un apprentissage progressif."
+                        ]
+                    },
+                    {
+                        "title": "Forums publics et privés",
+                        "features": [
+                            "Général: Accessible sans inscription, permettant de partager des dessins et des discussions générales.",
+                            "Formation: Réservé aux utilisateurs inscrits, pour des échanges spécifiques sur les cours suivis."
+                        ]
+                    },
+                    {
+                        "title": "Magazine en ligne",
+                        "features": [
+                            "Articles informatifs: Une collection d'articles sur les techniques de dessin, les outils, et l'histoire de l'art, accessible à tous les visiteurs pour enrichir leur culture artistique."
+                        ]
+                    },
+                    {
+                        "title": "FAQ et support",
+                        "features": [
+                            "Foire aux questions: Une section dédiée pour répondre aux interrogations les plus courantes des utilisateurs."
+                        ]
+                    },
+                    {
+                        "title": "Adaptabilité et responsivité",
+                        "features": [
+                            "Multiplateforme: Le site s'adapte à différents types d'écrans (ordinateurs, smartphones, tablettes) et navigateurs, garantissant une expérience utilisateur optimale en mode portrait ou paysage."
+                        ]
+                    }
+                ],
+                "process": [
+                    {
+                        "title": "Recherche et analyse",
+                        "steps": [
+                            "Identification des besoins",
+                            "Analyse des concurrents"
+                        ]
+                    },
+                    {
+                        "title": "Planification",
+                        "steps": [
+                            "Définition des objectifs",
+                            "Roadmap du projet"
+                        ]
+                    },
+                    {
+                        "title": "Conception UX/UI",
+                        "steps": [
+                            "Identité visuelle",
+                            "Wireframes et maquettes",
+                            "Prototype"
+                        ]
+                    },
+                    {
+                        "title": "Développement front-end",
+                        "steps": [
+                            "Structure HTML",
+                            "Stylisation CSS et Bootstrap",
+                            "Interactivité JavaScript"
+                        ]
+                    },
+                    {
+                        "title": "Développement back-end",
+                        "steps": ["Langage PHP", "Base de données SQL"]
+                    },
+                    {
+                        "title": "Intégration et test",
+                        "steps": ["Gestion du code source", "Tests et débogage"]
+                    },
+                    {
+                        "title": "Déploiement",
+                        "steps": [
+                            "Hébergement",
+                            "Optimisation des performances"
+                        ]
+                    },
+                    {
+                        "title": "Lancement et suivi",
+                        "steps": ["Lancement", "Suivi et maintenance"]
+                    }
+                ],
+                "tools": [
+                    {
+                        "category": "Gestion de projet",
+                        "items": [
+                            {
+                                "name": "Trello",
+                                "image": "../src/assets/img/trello.png"
+                            }
+                        ]
+                    },
+                    {
+                        "category": "Outils graphiques",
+                        "items": [
+                            {
+                                "name": "Adobe XD",
+                                "image": "../src/assets/img/xd.png"
+                            },
+                            {
+                                "name": "Adobe Illustrator",
+                                "image": "../src/assets/img/illustrator.png"
+                            },
+                            {
+                                "name": "Adobe Photoshop",
+                                "image": "../src/assets/img/photoshop.png"
+                            },
+                            {
+                                "name": "Adobe InDesign",
+                                "image": "../src/assets/img/indesign.png"
+                            }
+                        ]
+                    },
+                    {
+                        "category": "Outils techniques",
+                        "items": [
+                            {
+                                "name": "VS Code",
+                                "image": "../src/assets/img/vs-code.png"
+                            },
+                            {
+                                "name": "GitHub",
+                                "image": "../src/assets/img/github.png"
+                            },
+                            {
+                                "name": "phpMyAdmin",
+                                "image": "../src/assets/img/phpmyadmin.png"
+                            }
+                        ]
+                    },
+                    {
+                        "category": "Langages utilisés",
+                        "items": [
+                            {
+                                "name": "Bootstrap",
+                                "image": "../src/assets/img/bootstrap.png"
+                            },
+                            {
+                                "name": "JavaScript",
+                                "image": "../src/assets/img/javascript.png"
+                            },
+                            {
+                                "name": "PHP",
+                                "image": "../src/assets/img/php.png"
+                            }
+                        ]
+                    }
+                ]
             },
             "link": "pages/project.html?id=1"
         },
@@ -20,7 +179,7 @@
             "id": 2,
             "title": "Immo Prestige",
             "description": "Création d’un site web pour une agence immobilière de luxe.",
-            "image": "src/assets/img/mockup-immo-prestige-light.jpg",
+            "image": "../src/assets/img/mockup-immo-prestige-light.jpg",
             "skills": ["figma", "react", "redux"],
             "category": "Développement",
             "details": {
@@ -28,7 +187,121 @@
                 "objective": "Développer un site web attractif pour des biens immobiliers de prestige.",
                 "technologies": ["React", "Redux", "CSS"],
                 "duration": "4 mois",
-                "role": "Développeur front-end"
+                "role": "Développeur front-end",
+                "location": "Lyon, France",
+                "liveLink": "https://example.com/immo-prestige",
+                "functionalities": [
+                    {
+                        "title": "Recherche de propriétés",
+                        "features": [
+                            "Filtres avancés: Permettre aux utilisateurs de filtrer les propriétés par prix, localisation, type de bien, etc.",
+                            "Cartes interactives: Afficher les propriétés sur une carte interactive pour faciliter la recherche géographique."
+                        ]
+                    },
+                    {
+                        "title": "Galerie de photos",
+                        "features": [
+                            "Visionneuse: Permettre aux utilisateurs de visualiser des galeries de photos pour chaque propriété."
+                        ]
+                    },
+                    {
+                        "title": "Formulaire de contact",
+                        "features": [
+                            "Demande d'informations: Offrir aux utilisateurs la possibilité de contacter facilement l'agence pour plus d'informations ou pour organiser des visites."
+                        ]
+                    },
+                    {
+                        "title": "Blog immobilier",
+                        "features": [
+                            "Articles: Publier des articles sur les tendances du marché immobilier, des conseils d'achat, etc."
+                        ]
+                    }
+                ],
+                "process": [
+                    {
+                        "title": "Recherche et analyse",
+                        "steps": [
+                            "Étude de marché",
+                            "Analyse des besoins des utilisateurs"
+                        ]
+                    },
+                    {
+                        "title": "Conception UX/UI",
+                        "steps": ["Wireframes", "Maquettes haute fidélité"]
+                    },
+                    {
+                        "title": "Développement front-end",
+                        "steps": [
+                            "Développement de composants React",
+                            "Intégration Redux pour la gestion de l'état"
+                        ]
+                    },
+                    {
+                        "title": "Tests et assurance qualité",
+                        "steps": ["Tests unitaires", "Tests fonctionnels"]
+                    },
+                    {
+                        "title": "Lancement",
+                        "steps": [
+                            "Déploiement sur le serveur",
+                            "Optimisation SEO"
+                        ]
+                    }
+                ],
+                "tools": [
+                    {
+                        "category": "Gestion de projet",
+                        "items": [
+                            {
+                                "name": "Trello",
+                                "image": "../src/assets/img/trello.png"
+                            }
+                        ]
+                    },
+                    {
+                        "category": "Outils graphiques",
+                        "items": [
+                            {
+                                "name": "Adobe XD",
+                                "image": "../src/assets/img/xd.png"
+                            },
+                            {
+                                "name": "Adobe Photoshop",
+                                "image": "../src/assets/img/photoshop.png"
+                            }
+                        ]
+                    },
+                    {
+                        "category": "Outils techniques",
+                        "items": [
+                            {
+                                "name": "VS Code",
+                                "image": "../src/assets/img/vs-code.png"
+                            },
+                            {
+                                "name": "GitHub",
+                                "image": "../src/assets/img/github.png"
+                            }
+                        ]
+                    },
+                    {
+                        "category": "Langages utilisés",
+                        "items": [
+                            {
+                                "name": "React",
+                                "image": "../src/assets/img/react.png"
+                            },
+                            {
+                                "name": "Redux",
+                                "image": "../src/assets/img/redux.png"
+                            },
+                            {
+                                "name": "CSS",
+                                "image": "../src/assets/img/css.png"
+                            }
+                        ]
+                    }
+                ]
             },
             "link": "pages/project.html?id=2"
         },
@@ -36,7 +309,7 @@
             "id": 3,
             "title": "Norel Art",
             "description": "Création des maquettes entièrement responsives.",
-            "image": "src/assets/img/mockup-norel-art-light.jpg",
+            "image": "../src/assets/img/mockup-norel-art-light.jpg",
             "skills": ["figma", "photoshop", "illustrator"],
             "category": "Design UX/UI",
             "details": {
@@ -44,7 +317,99 @@
                 "objective": "Concevoir des maquettes responsives pour un site de galerie d'art.",
                 "technologies": ["Figma", "Photoshop", "Illustrator"],
                 "duration": "3 mois",
-                "role": "UI/UX Designer"
+                "role": "UI/UX Designer",
+                "location": "Bordeaux, France",
+                "liveLink": "https://example.com/norel-art",
+                "functionalities": [
+                    {
+                        "title": "Galerie d'art interactive",
+                        "features": [
+                            "Affichage des œuvres: Permettre aux utilisateurs de visualiser les œuvres d'art avec des descriptions détaillées."
+                        ]
+                    },
+                    {
+                        "title": "Expositions virtuelles",
+                        "features": [
+                            "Visite virtuelle: Offrir des visites virtuelles des expositions en cours ou passées."
+                        ]
+                    },
+                    {
+                        "title": "E-commerce intégré",
+                        "features": [
+                            "Achat d'œuvres: Intégrer une fonctionnalité de commerce électronique pour l'achat direct d'œuvres d'art."
+                        ]
+                    },
+                    {
+                        "title": "Blog artistique",
+                        "features": [
+                            "Articles: Publier des articles sur les artistes, les techniques et les événements artistiques."
+                        ]
+                    }
+                ],
+                "process": [
+                    {
+                        "title": "Recherche et analyse",
+                        "steps": [
+                            "Étude des besoins des utilisateurs",
+                            "Analyse des tendances du marché de l'art en ligne"
+                        ]
+                    },
+                    {
+                        "title": "Conception UX/UI",
+                        "steps": ["Wireframes", "Prototypage"]
+                    },
+                    {
+                        "title": "Tests utilisateurs",
+                        "steps": [
+                            "Tests de convivialité",
+                            "Feedback et itérations"
+                        ]
+                    },
+                    {
+                        "title": "Finalisation du design",
+                        "steps": [
+                            "Affinement des maquettes",
+                            "Préparation des livrables"
+                        ]
+                    }
+                ],
+                "tools": [
+                    {
+                        "category": "Gestion de projet",
+                        "items": [
+                            {
+                                "name": "Trello",
+                                "image": "../src/assets/img/trello.png"
+                            }
+                        ]
+                    },
+                    {
+                        "category": "Outils graphiques",
+                        "items": [
+                            {
+                                "name": "Figma",
+                                "image": "../src/assets/img/figma.png"
+                            },
+                            {
+                                "name": "Photoshop",
+                                "image": "../src/assets/img/photoshop.png"
+                            },
+                            {
+                                "name": "Illustrator",
+                                "image": "../src/assets/img/illustrator.png"
+                            }
+                        ]
+                    },
+                    {
+                        "category": "Outils de prototypage",
+                        "items": [
+                            {
+                                "name": "Figma",
+                                "image": "../src/assets/img/figma.png"
+                            }
+                        ]
+                    }
+                ]
             },
             "link": "pages/project.html?id=3"
         },
@@ -52,7 +417,7 @@
             "id": 4,
             "title": "Mystères à la Carte",
             "description": "Élaboration de la charte graphique.",
-            "image": "src/assets/img/mockup-mysteres-a-la-carte-light.png",
+            "image": "../src/assets/img/mockup-mysteres-a-la-carte-light.png",
             "skills": ["figma", "photoshop", "illustrator"],
             "category": "Branding",
             "details": {
@@ -60,7 +425,101 @@
                 "objective": "Créer une charte graphique complète pour un nouveau restaurant.",
                 "technologies": ["Figma", "Photoshop", "Illustrator"],
                 "duration": "2 mois",
-                "role": "Graphiste"
+                "role": "Graphiste",
+                "location": "Marseille, France",
+                "liveLink": "https://example.com/mysteres-a-la-carte",
+                "functionalities": [
+                    {
+                        "title": "Identité visuelle",
+                        "features": [
+                            "Logo: Création du logo représentant l'identité unique du restaurant.",
+                            "Palette de couleurs: Définir une palette de couleurs distinctive."
+                        ]
+                    },
+                    {
+                        "title": "Supports de communication",
+                        "features": [
+                            "Cartes de visite: Conception de cartes de visite pour le personnel.",
+                            "Menus: Design des menus du restaurant."
+                        ]
+                    },
+                    {
+                        "title": "Matériel promotionnel",
+                        "features": [
+                            "Affiches: Création d'affiches pour les événements et promotions.",
+                            "Flyers: Design de flyers pour la distribution locale."
+                        ]
+                    },
+                    {
+                        "title": "Présence en ligne",
+                        "features": [
+                            "Site web: Conception du design du site web du restaurant.",
+                            "Réseaux sociaux: Création de visuels pour les pages de réseaux sociaux."
+                        ]
+                    }
+                ],
+                "process": [
+                    {
+                        "title": "Recherche et analyse",
+                        "steps": [
+                            "Étude du marché et des concurrents",
+                            "Définition des valeurs et de l'image de marque"
+                        ]
+                    },
+                    {
+                        "title": "Conception graphique",
+                        "steps": [
+                            "Création de moodboards",
+                            "Développement des concepts graphiques"
+                        ]
+                    },
+                    {
+                        "title": "Révision et validation",
+                        "steps": [
+                            "Présentation des concepts au client",
+                            "Révisions basées sur le feedback"
+                        ]
+                    },
+                    {
+                        "title": "Production des livrables",
+                        "steps": [
+                            "Finalisation des designs",
+                            "Préparation des fichiers pour l'impression et le web"
+                        ]
+                    }
+                ],
+                "tools": [
+                    {
+                        "category": "Outils graphiques",
+                        "items": [
+                            {
+                                "name": "Figma",
+                                "image": "../src/assets/img/figma.png"
+                            },
+                            {
+                                "name": "Photoshop",
+                                "image": "../src/assets/img/photoshop.png"
+                            },
+                            {
+                                "name": "Illustrator",
+                                "image": "../src/assets/img/illustrator.png"
+                            },
+                            {
+                                "name": "InDesign",
+                                "image": "../src/assets/img/indesign.png"
+                            }
+                        ]
+                    },
+                    {
+                        "category": "Outils de gestion de projet",
+                        "items": [
+                            {
+                                "name": "Trello",
+                                "image": "../src/assets/img/trello.png"
+                            }
+                        ]
+                    }
+                ]
             },
             "link": "pages/project.html?id=4"
         }
