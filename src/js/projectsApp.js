@@ -38,7 +38,7 @@ async function loadProjects(page) {
       <a href="../${project.link}">
         <article class="group relative flex h-96 flex-col justify-between overflow-hidden rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default">
           <div class="relative h-full overflow-hidden rounded-lg">
-            <img src="../${project.image}" alt="" class="h-full w-full object-cover" />
+            <img src="${project.image}" alt="" class="h-full w-full object-cover" />
             <div class="absolute inset-0 bg-red-pink-300 opacity-25"></div>
           </div>
           <div class="absolute inset-0 flex flex-col justify-between lg:translate-y-full lg:transform lg:transition-transform lg:duration-500 lg:group-hover:translate-y-0">
@@ -82,7 +82,7 @@ async function loadRecentProjects() {
             projectElement.href = `project.html?id=${project.id}`;
             projectElement.className = 'relative overflow-hidden rounded-lg shadow-light-default sm:h-64 lg:h-96';
             projectElement.innerHTML = `
-        <img src="../${project.image}" alt="${project.title}" class="h-full w-full object-cover" />
+        <img src="${project.image}" alt="${project.title}" class="h-full w-full object-cover" />
         <div class="absolute inset-0 bg-red-pink-300 opacity-25"></div>
       `;
             recentProjectsContainer.appendChild(projectElement);
