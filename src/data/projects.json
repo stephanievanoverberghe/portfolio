@@ -4,7 +4,7 @@
             "id": 1,
             "title": "Formations Dessin",
             "description": "Création d’un site web sur l’apprentissage du dessin. Réalisation de A à Z, de la gestion de projet à la création de la base de données.",
-            "image": "../src/assets/img/mockup-formations-dessin-light.jpg",
+            "image": "src/assets/img/mockup-formations-dessin-light.jpg",
             "skills": ["figma", "javascript", "php", "sql"],
             "category": "Développement",
             "details": {
@@ -112,7 +112,7 @@
                         "items": [
                             {
                                 "name": "Trello",
-                                "image": "../src/assets/img/trello.png"
+                                "image": "src/assets/img/trello.png"
                             }
                         ]
                     },
@@ -121,19 +121,19 @@
                         "items": [
                             {
                                 "name": "Adobe XD",
-                                "image": "../src/assets/img/xd.png"
+                                "image": "src/assets/img/xd.png"
                             },
                             {
                                 "name": "Adobe Illustrator",
-                                "image": "../src/assets/img/illustrator.png"
+                                "image": "src/assets/img/illustrator.png"
                             },
                             {
                                 "name": "Adobe Photoshop",
-                                "image": "../src/assets/img/photoshop.png"
+                                "image": "src/assets/img/photoshop.png"
                             },
                             {
                                 "name": "Adobe InDesign",
-                                "image": "../src/assets/img/indesign.png"
+                                "image": "src/assets/img/indesign.png"
                             }
                         ]
                     },
@@ -142,15 +142,15 @@
                         "items": [
                             {
                                 "name": "VS Code",
-                                "image": "../src/assets/img/vs-code.png"
+                                "image": "src/assets/img/vs-code.png"
                             },
                             {
                                 "name": "GitHub",
-                                "image": "../src/assets/img/github.png"
+                                "image": "src/assets/img/github.png"
                             },
                             {
                                 "name": "phpMyAdmin",
-                                "image": "../src/assets/img/phpmyadmin.png"
+                                "image": "src/assets/img/phpmyadmin.png"
                             }
                         ]
                     },
@@ -159,15 +159,15 @@
                         "items": [
                             {
                                 "name": "Bootstrap",
-                                "image": "../src/assets/img/bootstrap.png"
+                                "image": "src/assets/img/bootstrap.png"
                             },
                             {
                                 "name": "JavaScript",
-                                "image": "../src/assets/img/javascript.png"
+                                "image": "src/assets/img/javascript.png"
                             },
                             {
                                 "name": "PHP",
-                                "image": "../src/assets/img/php.png"
+                                "image": "src/assets/img/php.png"
                             }
                         ]
                     }
@@ -179,7 +179,7 @@
             "id": 2,
             "title": "Immo Prestige",
             "description": "Création d’un site web pour une agence immobilière de luxe.",
-            "image": "../src/assets/img/mockup-immo-prestige-light.jpg",
+            "image": "src/assets/img/mockup-immo-prestige-light.jpg",
             "skills": ["figma", "react", "redux"],
             "category": "Développement",
             "details": {
@@ -254,7 +254,7 @@
                         "items": [
                             {
                                 "name": "Trello",
-                                "image": "../src/assets/img/trello.png"
+                                "image": "src/assets/img/trello.png"
                             }
                         ]
                     },
@@ -263,11 +263,11 @@
                         "items": [
                             {
                                 "name": "Adobe XD",
-                                "image": "../src/assets/img/xd.png"
+                                "image": "src/assets/img/xd.png"
                             },
                             {
                                 "name": "Adobe Photoshop",
-                                "image": "../src/assets/img/photoshop.png"
+                                "image": "src/assets/img/photoshop.png"
                             }
                         ]
                     },
@@ -276,11 +276,11 @@
                         "items": [
                             {
                                 "name": "VS Code",
-                                "image": "../src/assets/img/vs-code.png"
+                                "image": "src/assets/img/vs-code.png"
                             },
                             {
                                 "name": "GitHub",
-                                "image": "../src/assets/img/github.png"
+                                "image": "src/assets/img/github.png"
                             }
                         ]
                     },
@@ -289,15 +289,15 @@
                         "items": [
                             {
                                 "name": "React",
-                                "image": "../src/assets/img/react.png"
+                                "image": "src/assets/img/react.png"
                             },
                             {
                                 "name": "Redux",
-                                "image": "../src/assets/img/redux.png"
+                                "image": "src/assets/img/redux.png"
                             },
                             {
                                 "name": "CSS",
-                                "image": "../src/assets/img/css.png"
+                                "image": "src/assets/img/css.png"
                             }
                         ]
                     }
@@ -309,7 +309,7 @@
             "id": 3,
             "title": "Norel Art",
             "description": "Création des maquettes entièrement responsives.",
-            "image": "../src/assets/img/mockup-norel-art-light.jpg",
+            "image": "src/assets/img/mockup-norel-art-light.jpg",
             "skills": ["figma", "photoshop", "illustrator"],
             "category": "Design UX/UI",
             "details": {
@@ -379,7 +379,7 @@
                         "items": [
                             {
                                 "name": "Trello",
-                                "image": "../src/assets/img/trello.png"
+                                "image": "src/assets/img/trello.png"
                             }
                         ]
                     },
@@ -388,15 +388,15 @@
                         "items": [
                             {
                                 "name": "Figma",
-                                "image": "../src/assets/img/figma.png"
+                                "image": "src/assets/img/figma.png"
                             },
                             {
                                 "name": "Photoshop",
-                                "image": "../src/assets/img/photoshop.png"
+                                "image": "src/assets/img/photoshop.png"
                             },
                             {
                                 "name": "Illustrator",
-                                "image": "../src/assets/img/illustrator.png"
+                                "image": "src/assets/img/illustrator.png"
                             }
                         ]
                     },
@@ -405,7 +405,7 @@
                         "items": [
                             {
                                 "name": "Figma",
-                                "image": "../src/assets/img/figma.png"
+                                "image": "src/assets/img/figma.png"
                             }
                         ]
                     }
@@ -417,7 +417,7 @@
             "id": 4,
             "title": "Mystères à la Carte",
             "description": "Élaboration de la charte graphique.",
-            "image": "../src/assets/img/mockup-mysteres-a-la-carte-light.png",
+            "image": "src/assets/img/mockup-mysteres-a-la-carte-light.png",
             "skills": ["figma", "photoshop", "illustrator"],
             "category": "Branding",
             "details": {
@@ -494,19 +494,19 @@
                         "items": [
                             {
                                 "name": "Figma",
-                                "image": "../src/assets/img/figma.png"
+                                "image": "src/assets/img/figma.png"
                             },
                             {
                                 "name": "Photoshop",
-                                "image": "../src/assets/img/photoshop.png"
+                                "image": "src/assets/img/photoshop.png"
                             },
                             {
                                 "name": "Illustrator",
-                                "image": "../src/assets/img/illustrator.png"
+                                "image": "src/assets/img/illustrator.png"
                             },
                             {
                                 "name": "InDesign",
-                                "image": "../src/assets/img/indesign.png"
+                                "image": "src/assets/img/indesign.png"
                             }
                         ]
                     },
@@ -515,7 +515,7 @@
                         "items": [
                             {
                                 "name": "Trello",
-                                "image": "../src/assets/img/trello.png"
+                                "image": "src/assets/img/trello.png"
                             }
                         ]
                     }

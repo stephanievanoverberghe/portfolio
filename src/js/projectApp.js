@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (project) {
         document.getElementById('project-title').textContent = project.title;
         document.getElementById('project-link').href = project.details.liveLink;
-        document.getElementById('project-hero-image').src = project.image;
-        document.getElementById('project-image').src = project.image;
+        document.getElementById('project-hero-image').src = `../${project.image}`;
+        document.getElementById('project-image').src = `../${project.image}`;
 
         const objectiveContainer = document.getElementById('project-objective');
         project.details.objective.split('\n').forEach(obj => {
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 btn.className = 'group flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed md:h-16 md:w-16';
                 const img = document.createElement('img');
                 img.className = 'h-6 w-6 transition-transform duration-300 group-hover:scale-90 md:h-9 md:w-9';
-                img.src = item.image;
+                img.src = `../${item.image}`;
                 img.alt = item.name;
                 btn.appendChild(img);
                 divBtns.appendChild(btn);
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             const divImg = document.createElement('div');
             divImg.className = 'relative h-full overflow-hidden rounded-lg';
             const img = document.createElement('img');
-            img.src = otherProject.image;
+            img.src = `../${otherProject.image}`;
             img.alt = otherProject.title;
             img.className = 'h-full w-full object-cover';
             divImg.appendChild(img);
