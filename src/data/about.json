@@ -77,87 +77,53 @@
     ],
     "skills": [
         {
-            "category": "Front-End",
+            "category": "Languages / Framework",
             "skills": [
                 {
                     "id": 1,
-                    "name": "HTML",
-                    "description": "Maîtrise des balises HTML, des attributs, des éléments de structure, et des meilleures pratiques pour créer des pages web sémantiquement correctes."
+                    "name": "JavaScript (ES6+)"
                 },
                 {
                     "id": 2,
-                    "name": "CSS",
-                    "description": "Compétences avancées en mise en page, y compris l'utilisation de Flexbox et Grid pour créer des designs responsives. Capacité à styliser des composants et à appliquer des transitions et des animations CSS."
+                    "name": "React"
                 },
                 {
                     "id": 3,
-                    "name": "Bootstrap",
-                    "description": "Utilisation de Bootstrap pour créer des interfaces utilisateur réactives et attrayantes, en utilisant ses classes utilitaires et ses composants préconçus."
+                    "name": "TailwindCSS"
                 },
                 {
                     "id": 4,
-                    "name": "Tailwind",
-                    "description": "Utilisation de Tailwind pour un design utilitaire, permettant une personnalisation rapide et efficace des styles directement dans le HTML."
-                },
-                {
-                    "id": 5,
-                    "name": "Sass",
-                    "description": "Utilisation de Sass pour écrire du CSS modulaire et maintenable, avec des fonctionnalités telles que les variables, les mixins, et les fonctions."
-                },
-                {
-                    "id": 6,
-                    "name": "JavaScript (ES6+)",
-                    "description": "Compétences avancées en JavaScript, y compris les promesses, les fonctions asynchrones, et l'utilisation des modules ES6."
-                },
-                {
-                    "id": 7,
-                    "name": "React",
-                    "description": "Expertise en développement d'applications React, avec une compréhension approfondie des concepts tels que les hooks, le state management, et le lifecycle des composants."
-                },
-                {
-                    "id": 8,
-                    "name": "Redux",
-                    "description": "Gestion efficace de l'état des applications avec Redux, y compris la création de reducers, d'actions et l'utilisation du middleware Redux Thunk."
-                },
-                {
-                    "id": 9,
-                    "name": "Jest",
-                    "description": "Utilisation de Jest pour écrire et exécuter des tests unitaires, en s'assurant que le code est fiable et maintenable."
-                },
-                {
-                    "id": 10,
-                    "name": "JSDoc",
-                    "description": "Documentation du code JavaScript avec JSDoc pour améliorer la lisibilité et la maintenabilité."
+                    "name": "Bootstrap"
                 }
             ]
         },
         {
-            "category": "UX/UI Design",
+            "category": "Tests",
             "skills": [
                 {
                     "id": 1,
-                    "name": "Recherche utilisateur",
-                    "description": "Capacité à mener des recherches utilisateur pour comprendre les besoins et les comportements des utilisateurs finaux."
+                    "name": "Jest"
                 },
                 {
                     "id": 2,
-                    "name": "Wireframes et maquettes",
-                    "description": "Création de wireframes et de maquettes avec des outils tels que Figma et Adobe XD."
+                    "name": "Tests unitaires et d'intégration"
                 },
                 {
                     "id": 3,
-                    "name": "Prototypes",
-                    "description": "Développement de prototypes interactifs pour valider les conceptions avant la mise en œuvre."
+                    "name": "Tests E2E"
+                }
+            ]
+        },
+        {
+            "category": "Design",
+            "skills": [
+                {
+                    "id": 1,
+                    "name": "Maquettes"
                 },
                 {
-                    "id": 4,
-                    "name": "Identité visuelle",
-                    "description": "Conception de logos, d'animations et d'autres éléments graphiques en utilisant Adobe Illustrator, Photoshop, et After Effects."
-                },
-                {
-                    "id": 5,
-                    "name": "WordPress",
-                    "description": "Utilisation de WordPress pour créer et gérer des sites web, y compris la personnalisation des thèmes et des plugins."
+                    "id": 2,
+                    "name": "Identité visuelle"
                 }
             ]
         },
@@ -166,18 +132,15 @@
             "skills": [
                 {
                     "id": 1,
-                    "name": "Planification et organisation",
-                    "description": "Définition des objectifs, des tâches, des délais et des ressources nécessaires pour réaliser un projet. Création de calendriers, de plannings et de listes de tâches pour structurer le travail."
+                    "name": "Planification et organisation"
                 },
                 {
                     "id": 2,
-                    "name": "Méthodes agiles",
-                    "description": "Utilisation de la méthode Agile, en particulier Scrum, pour gérer le développement de projets. Création de user stories et organisation des sprints avec des outils comme Trello."
+                    "name": "Méthodes agiles"
                 },
                 {
                     "id": 3,
-                    "name": "Résolution de problèmes",
-                    "description": "Capacité à identifier et à résoudre les problèmes rapidement, et à ajuster les plans si nécessaire."
+                    "name": "Méthodes en cascade"
                 }
             ]
         },
@@ -186,13 +149,11 @@
             "skills": [
                 {
                     "id": 1,
-                    "name": "Optimisation On-Page",
-                    "description": "Identification des mots-clés pertinents pour améliorer le contenu. Optimisation des éléments sur le site web tels que les balises de titre, les méta-descriptions, les en-têtes, et le contenu pour augmenter la pertinence et la visibilité."
+                    "name": "Optimisation On-Page"
                 },
                 {
                     "id": 2,
-                    "name": "Performance et accessibilité",
-                    "description": "Amélioration de la vitesse de chargement des pages, de l'indexation par les moteurs de recherche et de l'optimisation des images. Application des bonnes pratiques d'accessibilité pour rendre le site web accessible à un public plus large."
+                    "name": "Performance et accessibilité"
                 }
             ]
         }

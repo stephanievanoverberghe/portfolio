@@ -97,11 +97,10 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <div class="mb-5">
                     <h3 class="font-Patua text-lg text-red-pink-600">${category.category}</h3>
                     ${category.skills.map(skill => `
-                        <div class="w-full border-l-8 border-red-pink-200 bg-gradient-to-br from-red-pink-100 to-red-pink-50 pr-2 shadow-light-default mb-3">
+                        <div class="w-full border-l-8 pb-3 border-red-pink-200 bg-gradient-to-br from-red-pink-100 to-red-pink-50 pr-2 shadow-light-default mb-3">
                             <div class="grid grid-cols-[1fr] items-center gap-5 pt-4">
                                 <div class="pl-4">
                                     <h4 class="font-Patua text-base text-red-pink-400 md:text-lg">${skill.name}</h4>
-                                    <p class="text-sm leading-relaxed text-red-pink-950 md:text-base">${skill.description}</p>
                                 </div>
                             </div>
                         </div>
@@ -115,7 +114,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         <h2 class="mb-5 text-center font-Patua text-lg text-red-pink-600 sm:mb-10 md:text-2xl">Mes valeurs</h2>
         <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
             ${values.map(value => `
-                <div class="w-full border-l-8 border-red-pink-200 bg-gradient-to-br from-red-pink-100 to-red-pink-50 pr-2 shadow-light-default">
+                <div class="w-full border-l-8 pb-3 border-red-pink-200 bg-gradient-to-br from-red-pink-100 to-red-pink-50 pr-2 shadow-light-default">
                     <div class="grid grid-cols-[1fr] items-center gap-5 pt-4">
                         <div class="pl-4">
                             <h4 class="font-Patua text-base text-red-pink-400 md:text-lg">${value.name}</h4>
