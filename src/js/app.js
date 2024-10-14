@@ -45,10 +45,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     const { courses, experiences, skills, values } = await aboutApi.getAboutData();
 
-    const coursesContainer = document.getElementById('courses');
-    const experiencesContainer = document.getElementById('experiences');
-    const skillsContainer = document.getElementById('skills-job');
-    const valuesContainer = document.getElementById('values');
+    const coursesContainer = document.querySelector('#courses');
+    const experiencesContainer = document.querySelector('#experiences');
+    const skillsContainer = document.querySelector('#skills-job');
+    const valuesContainer = document.querySelector('#values');
 
     coursesContainer.innerHTML = `
         <h2 class="mb-5 text-center font-Patua text-lg text-red-pink-600 sm:mb-10 md:text-2xl">Mon parcours</h2>
