@@ -1,21 +1,25 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "tailwindcss -i ./src/style.css -o ./src/output.css --watch",
-    "build": "tailwindcss -o ./src/output.css --minify",
-    "format": "prettier --write index.html "
-  },
-  "keywords": [],
-  "author": "Vanoverberghe Stéphanie",
-  "license": "ISC",
-  "devDependencies": {
-    "@tailwindcss/forms": "^0.5.7",
-    "@tailwindcss/typography": "^0.5.13",
-    "prettier": "^3.2.5",
-    "prettier-plugin-tailwindcss": "^0.5.12",
-    "tailwindcss": "^3.4.1"
-  }
+    "name": "portfolio",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "tailwindcss -i ./src/style.css -o ./src/output.css --watch",
+        "build": "tailwindcss -o ./src/output.css --minify",
+        "startVite": "vite",
+        "buildVite": "vite build",
+        "preview": "vite preview",
+        "format": "prettier --write index.html "
+    },
+    "keywords": [],
+    "author": "Vanoverberghe Stéphanie",
+    "license": "ISC",
+    "devDependencies": {
+        "@tailwindcss/forms": "^0.5.7",
+        "@tailwindcss/typography": "^0.5.13",
+        "prettier": "^3.2.5",
+        "prettier-plugin-tailwindcss": "^0.5.12",
+        "tailwindcss": "^3.4.1",
+        "vite": "^5.4.9"
+    }
 }
