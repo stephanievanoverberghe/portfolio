@@ -85,11 +85,42 @@
                     <!-- Bouton du menu hamburger pour mobile -->
                     <div class="block lg:hidden">
                         <button
+                            id="menuTrigger"
                             class="mx-4 flex h-10 w-10 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default"
                         >
-                            <i class="fa-solid fa-bars fa-xl"></i>
+                            <i class="fa-solid fa-bars fa-xl menu__icon"></i>
+                            <i
+                                class="fa-solid fa-xmark fa-xl menu__icon hidden"
+                            ></i>
                         </button>
                     </div>
+
+                    <!-- Navigation mobile cachée -->
+                    <nav
+                        id="menu"
+                        class="absolute left-0 top-20 z-10 hidden w-full bg-red-pink-50 shadow-light-default lg:hidden"
+                    >
+                        <ul class="flex flex-col items-center gap-6 py-4">
+                            <li>
+                                <a href="../../index.html" class="">A propos</a>
+                            </li>
+                            <li>
+                                <a href="../../index.html" class=""
+                                    >Compétences</a
+                                >
+                            </li>
+                            <li>
+                                <a href="../../pages/projects.html" class=""
+                                    >Projets</a
+                                >
+                            </li>
+                            <li>
+                                <a href="mailto:orangestreet@live.fr" class=""
+                                    >Contact</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
                     <!-- Lien vers la page de contact -->
                     <a
                         href="#contact"
@@ -246,5 +277,6 @@
                 Copyright 2024 Vanoverberghe Stéphanie. Tous droits réservés.
             </p>
         </footer>
+        <script src="../../src/js/utils/nav.js"></script>
     </body>
 </html>

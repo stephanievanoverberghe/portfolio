@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.4 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -211,6 +211,8 @@ textarea {
   /* 1 */
   line-height: inherit;
   /* 1 */
+  letter-spacing: inherit;
+  /* 1 */
   color: inherit;
   /* 1 */
   margin: 0;
@@ -234,9 +236,9 @@ select {
 */
 
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -687,6 +689,10 @@ select {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
 }
 
 ::backdrop {
@@ -737,6 +743,10 @@ select {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
 }
 
 .fixed {
@@ -757,6 +767,22 @@ select {
 
 .bottom-0 {
   bottom: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.top-16 {
+  top: 4rem;
+}
+
+.top-20 {
+  top: 5rem;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .z-50 {
@@ -785,10 +811,6 @@ select {
 
 .mb-10 {
   margin-bottom: 2.5rem;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
 }
 
 .mb-3 {
@@ -951,6 +973,10 @@ select {
   cursor: pointer;
 }
 
+.resize {
+  resize: both;
+}
+
 .list-inside {
   list-style-position: inside;
 }
@@ -965,10 +991,6 @@ select {
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .grid-cols-\[1fr\] {
@@ -1029,11 +1051,6 @@ select {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-x-10 {
-  -moz-column-gap: 2.5rem;
-       column-gap: 2.5rem;
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1182,6 +1199,11 @@ select {
   padding-bottom: 0.5rem;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .pb-24 {
   padding-bottom: 6rem;
 }
@@ -1315,6 +1337,10 @@ select {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .transition-colors {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1402,10 +1428,6 @@ select {
     margin-top: 1rem;
   }
 
-  .sm\:block {
-    display: block;
-  }
-
   .sm\:flex {
     display: flex;
   }
@@ -1489,10 +1511,6 @@ select {
     margin-top: 1.75rem;
   }
 
-  .md\:block {
-    display: block;
-  }
-
   .md\:flex {
     display: flex;
   }
@@ -1513,10 +1531,6 @@ select {
     height: 4rem;
   }
 
-  .md\:h-8 {
-    height: 2rem;
-  }
-
   .md\:h-9 {
     height: 2.25rem;
   }
@@ -1531,10 +1545,6 @@ select {
 
   .md\:w-16 {
     width: 4rem;
-  }
-
-  .md\:w-8 {
-    width: 2rem;
   }
 
   .md\:w-9 {
@@ -1774,10 +1784,6 @@ select {
     margin-right: 0px;
   }
 
-  .xl\:block {
-    display: block;
-  }
-
   .xl\:max-w-\[495px\] {
     max-width: 495px;
   }
@@ -1797,11 +1803,6 @@ select {
 }
 
 @media (prefers-color-scheme: dark) {
-  .dark\:bg-red-pink-700 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(193 15 66 / var(--tw-bg-opacity));
-  }
-
   .dark\:text-red-pink-400 {
     --tw-text-opacity: 1;
     color: rgb(253 111 136 / var(--tw-text-opacity));
