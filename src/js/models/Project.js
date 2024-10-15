@@ -12,6 +12,7 @@ export class Project {
         this.details = data.details;
         this.link = data.link;
         this.category = data.category;
+        this.date = data.date;
     }
 
     getDetails() {

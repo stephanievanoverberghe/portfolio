@@ -40,14 +40,23 @@ class ProjectApi extends Api {
         return project ? new Project(project) : null;
     }
 
-    async getProjectsPaginated(page = 1, limit = 6) {
+    async getProjectsPaginated(page = 1, limit = 6, sort = 'recent') {
         const data = await this.get();
         if (data) {
+            let projects = data.projects.map(project => new Project(project));
+
+            // Sort projects by date
+            projects = projects.sort((a, b) => {
+                const dateA = new Date(a.date);
+                const dateB = new Date(b.date);
+                return sort === 'recent' ? dateB - dateA : dateA - dateB;
+            });
+
             const start = (page - 1) * limit;
             const end = page * limit;
             return {
-                projects: data.projects.slice(start, end).map(project => new Project(project)),
-                total: data.projects.length
+                projects: projects.slice(start, end),
+                total: projects.length
             };
         }
         return { projects: [], total: 0 };

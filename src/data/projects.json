@@ -7,6 +7,7 @@
             "image": "src/assets/img/mockup-formations-dessin-light.jpg",
             "skills": ["figma", "javascript", "php", "sql"],
             "category": "Développement",
+            "date": "2023-01-15",
             "details": {
                 "introduction": "Projet pour apprendre le dessin.",
                 "objective": "Réaliser un site complet pour des cours de dessin.",
@@ -182,6 +183,7 @@
             "image": "src/assets/img/mockup-immo-prestige-light.jpg",
             "skills": ["figma", "react", "redux"],
             "category": "Développement",
+            "date": "2023-10-15",
             "details": {
                 "introduction": "Projet pour une agence immobilière.",
                 "objective": "Développer un site web attractif pour des biens immobiliers de prestige.",
@@ -312,6 +314,7 @@
             "image": "src/assets/img/mockup-norel-art-light.jpg",
             "skills": ["figma", "photoshop", "illustrator"],
             "category": "Design UX/UI",
+            "date": "2024-02-19",
             "details": {
                 "introduction": "Projet de design pour une galerie d'art.",
                 "objective": "Concevoir des maquettes responsives pour un site de galerie d'art.",
@@ -420,6 +423,7 @@
             "image": "src/assets/img/mockup-mysteres-a-la-carte-light.png",
             "skills": ["figma", "photoshop", "illustrator"],
             "category": "Branding",
+            "date": "2024-06-06",
             "details": {
                 "introduction": "Projet de branding pour un restaurant à thème.",
                 "objective": "Créer une charte graphique complète pour un nouveau restaurant.",

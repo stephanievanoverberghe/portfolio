@@ -217,19 +217,7 @@
                                     name="categories"
                                     id="categories"
                                     class="w-full rounded-md border-none bg-red-pink-100 text-xs font-bold shadow-light-default md:text-sm lg:cursor-pointer lg:text-base"
-                                >
-                                    <option value="">-- Catégories --</option>
-                                    <option value="web" selected>
-                                        Développement web
-                                    </option>
-                                    <option value="uiux">UI/UX design</option>
-                                    <option value="ecommerce">
-                                        E-commerce
-                                    </option>
-                                    <option value="elearning">
-                                        E-learning
-                                    </option>
-                                </select>
+                                ></select>
                             </div>
                             <div>
                                 <label for="languages"></label>
@@ -237,13 +225,7 @@
                                     name="languages"
                                     id="languages"
                                     class="w-full rounded-md border-none bg-red-pink-100 text-xs font-bold shadow-light-default md:text-sm lg:cursor-pointer lg:text-base"
-                                >
-                                    <option value="">-- Langages --</option>
-                                    <option value="">Tailwind</option>
-                                    <option value="">Bootstrap</option>
-                                    <option value="">JavaScript</option>
-                                    <option value="">React</option>
-                                </select>
+                                ></select>
                             </div>
                             <div>
                                 <label for="sort"></label>
@@ -253,25 +235,36 @@
                                     class="w-full rounded-md border-none bg-red-pink-100 text-xs font-bold shadow-light-default md:text-sm lg:cursor-pointer lg:text-base"
                                 >
                                     <option value="">-- Tri --</option>
-                                    <option value="">Le plus récent</option>
-                                    <option value="">Le plus ancien</option>
+                                    <option value="recent">
+                                        Le plus récent
+                                    </option>
+                                    <option value="oldest">
+                                        Le plus ancien
+                                    </option>
                                 </select>
                             </div>
                         </div>
                     </div>
                 </form>
                 <div class="flex flex-col items-center justify-center">
-                    <div>
+                    <div class="mb-5">
                         <h2
-                            class="mb-5 text-center font-Patua text-lg text-red-pink-600 sm:mb-10 md:text-2xl"
-                        >
-                            Développement web
-                        </h2>
-                        <p class="mb-6 text-sm md:mb-11 md:mt-7 md:text-base">
-                            Projets où j'ai travaillé sur l'interface
-                            utilisateur, en utilisant des technologies comme
-                            HTML, CSS, JavaScript ou React.
-                        </p>
+                            class="text-center font-Patua text-lg text-red-pink-600 sm:mb-10 md:text-2xl"
+                        ></h2>
+                        <ul id="selected-items" class="flex gap-4">
+                            <li
+                                class="flex w-48 items-center justify-between rounded-lg bg-red-pink-600 px-4 py-2 text-sm text-red-pink-100"
+                            >
+                                Développement
+                                <i class="fas fa-times cursor-pointer"></i>
+                            </li>
+                            <li
+                                class="flex w-48 items-center justify-between rounded-lg bg-red-pink-600 px-4 py-2 text-sm text-red-pink-100"
+                            >
+                                React
+                                <i class="fas fa-times cursor-pointer"></i>
+                            </li>
+                        </ul>
                     </div>
                     <!-- Articles décrivant les projets réalisés -->
                     <div
@@ -341,17 +334,6 @@
                             <img
                                 class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
                                 src="../src/assets/img/github.png"
-                                alt=""
-                            />
-                        </a>
-                        <a
-                            href="https://www.behance.net/vano-stephanie"
-                            target="_blank"
-                            class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed"
-                        >
-                            <img
-                                class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                src="../src/assets/img/behance.png"
                                 alt=""
                             />
                         </a>

@@ -14,18 +14,6 @@
         },
         {
             "id": 2,
-            "name": "Graduate Web et communication visuelle",
-            "place": "Studi - distanciel",
-            "start": "2024",
-            "end": "Présent",
-            "skills": [
-                "Travail sur divers projets en situation d'entreprise.",
-                "Gestion de projet, veille, UX design, UI design, responsive design, datavisualisation, accessibilité, print.",
-                "Maîtrise de Photoshop, Illustrator, Indesign, Première Pro, After Effects, WordPress, HTML, CSS."
-            ]
-        },
-        {
-            "id": 3,
             "name": "Développeur Web et Web Mobile",
             "place": "La Manu - Amiens",
             "start": "2022",
@@ -34,6 +22,18 @@
                 "Langages HTML, CSS, Bootstrap, JavaScript, PHP, SQL, Merise, Wordpress.",
                 "Maquettage, UX design, Responsive design, SEO, stage de 40h en entreprise.",
                 "Conception d'une plateforme E-learning en lien avec l'apprentissage du dessin."
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Comptabilité et Gestion",
+            "place": "EIC - Tourcoing",
+            "start": "1998",
+            "end": "2000",
+            "skills": [
+                "Maîtrise des bases de la comptabilité générale : tenue des comptes, bilans et écritures comptables.",
+                "Apprentissage de la gestion financière et de la fiscalité d’entreprise.",
+                "Compétences en analyse des coûts et gestion budgétaire dans divers secteurs économiques."
             ]
         }
     ],
