@@ -131,7 +131,7 @@ function updateSelectedItems(selectedValue, type) {
       existingCategory.remove();
     }
     const li = document.createElement('li');
-    li.classList.add('flex', 'w-48', 'items-center', 'justify-between', 'rounded-lg', 'bg-red-pink-600', 'px-4', 'py-2', 'text-sm', 'text-red-pink-100');
+    li.classList.add('flex', 'md:w-48', 'w-28', 'items-center', 'justify-between', 'rounded-lg', 'bg-red-pink-600', 'px-4', 'py-2', 'text-[9px]', 'md:text-sm', 'text-red-pink-100');
     li.dataset.type = 'category';
     li.dataset.value = selectedValue;
     li.innerHTML = `
@@ -151,7 +151,7 @@ function updateSelectedItems(selectedValue, type) {
       existingLanguage.remove();
     }
     const li = document.createElement('li');
-    li.classList.add('flex', 'w-48', 'items-center', 'justify-between', 'rounded-lg', 'bg-red-pink-600', 'px-4', 'py-2', 'text-sm', 'text-red-pink-100');
+    li.classList.add('flex', 'md:w-48', 'w-28', 'items-center', 'justify-between', 'rounded-lg', 'bg-red-pink-600', 'px-4', 'py-2', 'text-[9px]', 'md:text-sm', 'text-red-pink-100');
     li.dataset.type = 'language';
     li.dataset.value = selectedValue;
     li.innerHTML = `
