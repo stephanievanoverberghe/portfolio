@@ -1577,6 +1577,10 @@ select {
     grid-template-columns: 200px auto;
   }
 
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
   .md\:items-start {
     align-items: flex-start;
   }

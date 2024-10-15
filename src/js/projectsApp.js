@@ -9,39 +9,38 @@ document.addEventListener('DOMContentLoaded', async () => {
   await populateFilters();
   await loadProjects(currentPage, '', '', currentSort);
 
-  // Listener for category selection
+  // Écouteur pour la sélection de catégorie
   document.querySelector('#categories').addEventListener('change', async (e) => {
     const selectedCategory = e.target.value;
-    updateSelectedItems(selectedCategory, 'category'); // Update category
-    const selectedLanguages = getSelectedLanguages();
-    await loadProjects(currentPage, selectedCategory, selectedLanguages, currentSort);
+    updateSelectedItems(selectedCategory, 'category'); // MàJ catégorie
+    const selectedLanguage = document.querySelector('#languages').value;
+    await loadProjects(currentPage, selectedCategory, selectedLanguage, currentSort);
   });
 
-  // Listener for language selection
+  // Écouteur pour la sélection de langage
   document.querySelector('#languages').addEventListener('change', async (e) => {
     const selectedLanguage = e.target.value;
-    updateSelectedItems(selectedLanguage, 'language'); // Update languages
+    updateSelectedItems(selectedLanguage, 'language'); // MàJ langage
     const selectedCategory = document.querySelector('#categories').value;
-    const selectedLanguages = getSelectedLanguages();
-    await loadProjects(currentPage, selectedCategory, selectedLanguages, currentSort);
+    await loadProjects(currentPage, selectedCategory, selectedLanguage, currentSort);
   });
 
-  // Listener for sorting selection
+  // Écouteur pour le tri
   document.querySelector('#sort').addEventListener('change', async (e) => {
     currentSort = e.target.value === 'Le plus récent' ? 'recent' : 'old';
     const selectedCategory = document.querySelector('#categories').value;
-    const selectedLanguages = getSelectedLanguages();
-    await loadProjects(currentPage, selectedCategory, selectedLanguages, currentSort);
+    const selectedLanguage = document.querySelector('#languages').value;
+    await loadProjects(currentPage, selectedCategory, selectedLanguage, currentSort);
   });
 
-  // Pagination controls
+  // Pagination
   document.querySelector('#prev-page').addEventListener('click', async (e) => {
     e.preventDefault();
     if (currentPage > 1) {
       currentPage--;
       const selectedCategory = document.querySelector('#categories').value;
-      const selectedLanguages = getSelectedLanguages();
-      await loadProjects(currentPage, selectedCategory, selectedLanguages, currentSort);
+      const selectedLanguage = document.querySelector('#languages').value;
+      await loadProjects(currentPage, selectedCategory, selectedLanguage, currentSort);
     }
   });
 
@@ -49,34 +48,33 @@ document.addEventListener('DOMContentLoaded', async () => {
     e.preventDefault();
     currentPage++;
     const selectedCategory = document.querySelector('#categories').value;
-    const selectedLanguages = getSelectedLanguages();
-    await loadProjects(currentPage, selectedCategory, selectedLanguages, currentSort);
+    const selectedLanguage = document.querySelector('#languages').value;
+    await loadProjects(currentPage, selectedCategory, selectedLanguage, currentSort);
   });
 
   await loadRecentProjects();
 });
 
 /**
- * Load projects based on page, category, languages, and sort order.
- * @param {number} page - The page number.
- * @param {string} [category] - The selected category.
- * @param {Array<string>} [languages] - The selected languages.
- * @param {string} [sort] - The sorting order ('recent' or 'old').
+ * Load projects based on filters and sorting
+ * @param {number} page - Current page
+ * @param {string} category - Selected category
+ * @param {string} language - Selected language
+ * @param {string} sort - Sorting order ('recent' or 'old')
  */
-async function loadProjects(page, category = '', languages = [], sort = 'recent') {
+async function loadProjects(page, category = '', language = '', sort = 'recent') {
   const projectsContainer = document.querySelector('#projects-container');
   const paginationInfo = document.querySelector('#pagination-info');
   projectsContainer.innerHTML = '';
 
-  // Get paginated and sorted projects
   let { projects, total } = await projectApi.getProjectsPaginated(page, projectsPerPage, sort);
 
-  // Filter projects by category and language
+  // Filter projects based on category and language
   if (category) {
     projects = projects.filter(project => project.category === category);
   }
-  if (languages.length > 0) {
-    projects = projects.filter(project => languages.every(lang => project.skills.includes(lang)));
+  if (language) {
+    projects = projects.filter(project => project.skills.includes(language));
   }
 
   projects.forEach(project => {
@@ -119,21 +117,19 @@ async function loadProjects(page, category = '', languages = [], sort = 'recent'
 }
 
 /**
- * Updates selected items (category or language) and displays them as list items.
- * @param {string} selectedValue - The selected value.
- * @param {string} type - The type of selection ('category' or 'language').
+ * Update selected category or language and add to selected items list
+ * @param {string} selectedValue - Selected value from the dropdown
+ * @param {string} type - Type of selection ('category' or 'language')
  */
 function updateSelectedItems(selectedValue, type) {
   const selectedItemsList = document.querySelector('#selected-items');
 
+  // If type is 'category', remove previous category and replace it
   if (type === 'category') {
-    // Remove the old category if it exists
     const existingCategory = selectedItemsList.querySelector(`[data-type="category"]`);
     if (existingCategory) {
       existingCategory.remove();
     }
-
-    // Add the new category
     const li = document.createElement('li');
     li.classList.add('flex', 'w-48', 'items-center', 'justify-between', 'rounded-lg', 'bg-red-pink-600', 'px-4', 'py-2', 'text-sm', 'text-red-pink-100');
     li.dataset.type = 'category';
@@ -142,52 +138,38 @@ function updateSelectedItems(selectedValue, type) {
       ${selectedValue}
       <i class="fas fa-times cursor-pointer"></i>
     `;
-
-    // Remove the item when clicking the cross
     li.querySelector('i').addEventListener('click', async () => {
       li.remove();
       document.querySelector('#categories').value = '';
-      const selectedLanguages = getSelectedLanguages();
-      await loadProjects(currentPage, '', selectedLanguages, currentSort);
+      const selectedLanguage = document.querySelector('#languages').value;
+      await loadProjects(currentPage, '', selectedLanguage, currentSort);
     });
-
     selectedItemsList.appendChild(li);
   } else if (type === 'language') {
-    // Check if the language is already selected
-    if (!selectedItemsList.querySelector(`[data-type="language"][data-value="${selectedValue}"]`)) {
-      const li = document.createElement('li');
-      li.classList.add('flex', 'w-48', 'items-center', 'justify-between', 'rounded-lg', 'bg-red-pink-600', 'px-4', 'py-2', 'text-sm', 'text-red-pink-100');
-      li.dataset.type = 'language';
-      li.dataset.value = selectedValue;
-      li.innerHTML = `
-        ${selectedValue}
-        <i class="fas fa-times cursor-pointer"></i>
-      `;
-
-      // Remove the item when clicking the cross
-      li.querySelector('i').addEventListener('click', async () => {
-        li.remove();
-        const selectedCategory = document.querySelector('#categories').value;
-        const selectedLanguages = getSelectedLanguages();
-        await loadProjects(currentPage, selectedCategory, selectedLanguages, currentSort);
-      });
-
-      selectedItemsList.appendChild(li);
+    const existingLanguage = selectedItemsList.querySelector(`[data-type="language"]`);
+    if (existingLanguage) {
+      existingLanguage.remove();
     }
+    const li = document.createElement('li');
+    li.classList.add('flex', 'w-48', 'items-center', 'justify-between', 'rounded-lg', 'bg-red-pink-600', 'px-4', 'py-2', 'text-sm', 'text-red-pink-100');
+    li.dataset.type = 'language';
+    li.dataset.value = selectedValue;
+    li.innerHTML = `
+      ${selectedValue}
+      <i class="fas fa-times cursor-pointer"></i>
+    `;
+    li.querySelector('i').addEventListener('click', async () => {
+      li.remove();
+      document.querySelector('#languages').value = '';
+      const selectedCategory = document.querySelector('#categories').value;
+      await loadProjects(currentPage, selectedCategory, '', currentSort);
+    });
+    selectedItemsList.appendChild(li);
   }
 }
 
 /**
- * Gets the selected languages from the displayed items in the list.
- * @returns {Array<string>} - An array of selected languages.
- */
-function getSelectedLanguages() {
-  const selectedItems = document.querySelectorAll('#selected-items [data-type="language"]');
-  return Array.from(selectedItems).map(item => item.dataset.value);
-}
-
-/**
- * Populates the category and language selection filters.
+ * Populate category and language filters
  */
 async function populateFilters() {
   const categoriesSelect = document.querySelector('#categories');
@@ -210,7 +192,7 @@ async function populateFilters() {
 }
 
 /**
- * Loads the most recent projects and displays them in the recent projects section.
+ * Load recent projects
  */
 async function loadRecentProjects() {
   const recentProjectsContainer = document.querySelector('.recent-projects');
