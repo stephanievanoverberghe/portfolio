@@ -27,10 +27,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // Écouteur pour le tri
   document.querySelector('#sort').addEventListener('change', async (e) => {
-    currentSort = e.target.value === 'Le plus récent' ? 'recent' : 'old';
+    const selectedSort = e.target.value;
     const selectedCategory = document.querySelector('#categories').value;
     const selectedLanguage = document.querySelector('#languages').value;
-    await loadProjects(currentPage, selectedCategory, selectedLanguage, currentSort);
+    await loadProjects(currentPage, selectedCategory, selectedLanguage, selectedSort);
   });
 
   // Pagination
