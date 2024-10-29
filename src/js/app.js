@@ -7,7 +7,9 @@ const aboutApi = new AboutApi('src/data/about.json');
 document.addEventListener('DOMContentLoaded', async () => {
 
     const projectsContainer = document.querySelector('#projects-container');
-    const projects = await projectApi.getProjects();
+    let projects = await projectApi.getProjects();
+
+    projects = projects.sort((a, b) => new Date(b.date) - new Date(a.date));
 
     projects.forEach(project => {
         const projectElement = document.createElement('div');
@@ -43,8 +45,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectsContainer.appendChild(projectElement);
     });
 
+    // Charger les données supplémentaires (parcours, expérience, compétences et valeurs)
     const { courses, experiences, skills, values } = await aboutApi.getAboutData();
-
     const coursesContainer = document.querySelector('#courses');
     const experiencesContainer = document.querySelector('#experiences');
     const skillsContainer = document.querySelector('#skills-job');
