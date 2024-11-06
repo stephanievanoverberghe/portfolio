@@ -9,21 +9,26 @@ export async function loadSliderImages() {
 
     try {
         const data = await projectApi.get();
-        console.log("Données du projet :", data);
 
         if (!data || !data.projects) {
             throw new Error("Erreur: Les projets ne sont pas définis dans le fichier JSON.");
         }
 
-        const images = data.projects.map(project => project.image);
-        const totalSlides = images.length;
+        const totalSlides = data.projects.length;
 
+        // Génération du HTML avec les images et liens
         sliderContainer.innerHTML = `
-            <img src="../${images[totalSlides - 1]}" class="w-full h-full object-cover flex-shrink-0" alt="Clone Last Image"/>
-            ${images.map((image, index) => `
-                <img src="../${image}" alt="Slide ${index + 1}" class="w-full h-full object-cover flex-shrink-0" />
+            <a href="../${data.projects[totalSlides - 1].link}" class="w-full h-full flex-shrink-0">
+                <img src="../${data.projects[totalSlides - 1].image}" class="w-full h-full object-cover" alt="Clone Last Image"/>
+            </a>
+            ${data.projects.map((project) => `
+                <a href="../${project.link}" class="w-full h-full flex-shrink-0">
+                    <img src="../${project.image}" class="w-full h-full object-cover" alt="Slide ${project.title}" />
+                </a>
             `).join('')}
-            <img src="../${images[0]}" class="w-full h-full object-cover flex-shrink-0" alt="Clone First Image"/>
+            <a href="../${data.projects[0].link}" class="w-full h-full flex-shrink-0">
+                <img src="../${data.projects[0].image}" class="w-full h-full object-cover" alt="Clone First Image"/>
+            </a>
         `;
 
         let currentIndex = 1;
