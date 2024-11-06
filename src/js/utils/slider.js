@@ -1,4 +1,4 @@
-import { ProjectApi } from './../api/api';
+import { ProjectApi } from './../api/api.js';
 
 const projectApi = new ProjectApi('./../src/data/projects.json');
 
