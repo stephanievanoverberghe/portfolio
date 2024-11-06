@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- Préchargement des polices Google -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -16,9 +15,8 @@
             href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap"
             rel="stylesheet"
         />
-        <!-- Chargement des icônes FontAwesome -->
         <script
-            src="https://kit.fontawesome.com/33a775bcdb.js"
+            src="https://kit.fontawesome.com/e5228146fd.js"
             crossorigin="anonymous"
         ></script>
         <link rel="stylesheet" href="../src/output.css" />
@@ -175,7 +173,7 @@
                         alt=""
                     />
                 </div>
-                <!-- Texte de présentation -->
+
                 <div class="my-16 flex flex-col items-center justify-center">
                     <span
                         class="text-center text-xs uppercase tracking-[3px] text-red-pink-900 md:text-sm"
@@ -189,9 +187,35 @@
                             >Portfolio</span
                         >
                     </h1>
+                    <!-- Slider -->
                     <div
-                        class="recent-projects gap-5 sm:grid sm:grid-cols-3"
-                    ></div>
+                        class="recent-projects relative mx-auto w-full overflow-hidden rounded-lg"
+                    >
+                        <div
+                            class="slider-container flex h-60 w-full transition-transform duration-300 sm:h-80 lg:h-96"
+                            id="slider"
+                        ></div>
+
+                        <!-- Buttons of navigation -->
+                        <button
+                            id="prev"
+                            class="absolute left-3 top-1/2 hidden -translate-y-1/2 transform rounded-full bg-red-pink-400 bg-opacity-50 p-3 text-red-pink-50 md:flex"
+                        >
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button
+                            id="next"
+                            class="absolute right-3 top-1/2 hidden -translate-y-1/2 transform rounded-full bg-red-pink-400 bg-opacity-50 p-3 text-red-pink-50 md:flex"
+                        >
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+
+                        <!-- Counter -->
+                        <div
+                            class="absolute bottom-4 left-1/2 hidden -translate-x-1/2 transform rounded-md bg-red-pink-400 bg-opacity-50 px-3 py-1 text-red-pink-50 md:flex"
+                            id="counter"
+                        ></div>
+                    </div>
                 </div>
             </section>
         </div>

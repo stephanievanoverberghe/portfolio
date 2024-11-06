@@ -1,4 +1,5 @@
 import { ProjectApi } from './api/api.js';
+import { loadSliderImages } from './utils/slider.js';
 
 const projectApi = new ProjectApi('../src/data/projects.json');
 let currentPage = 1;
@@ -9,10 +10,12 @@ document.addEventListener('DOMContentLoaded', async () => {
   await populateFilters();
   await loadProjects(currentPage, '', '', currentSort);
 
+  loadSliderImages();
+
   // Écouteur pour la sélection de catégorie
   document.querySelector('#categories').addEventListener('change', async (e) => {
     const selectedCategory = e.target.value;
-    updateSelectedItems(selectedCategory, 'category'); // MàJ catégorie
+    updateSelectedItems(selectedCategory, 'category');
     const selectedLanguage = document.querySelector('#languages').value;
     await loadProjects(currentPage, selectedCategory, selectedLanguage, currentSort);
   });
@@ -20,7 +23,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Écouteur pour la sélection de langage
   document.querySelector('#languages').addEventListener('change', async (e) => {
     const selectedLanguage = e.target.value;
-    updateSelectedItems(selectedLanguage, 'language'); // MàJ langage
+    updateSelectedItems(selectedLanguage, 'language');
     const selectedCategory = document.querySelector('#categories').value;
     await loadProjects(currentPage, selectedCategory, selectedLanguage, currentSort);
   });
@@ -52,7 +55,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     await loadProjects(currentPage, selectedCategory, selectedLanguage, currentSort);
   });
 
-  await loadRecentProjects();
+  // await loadRecentProjects();
 });
 
 /**
@@ -189,26 +192,4 @@ async function populateFilters() {
     const capitalizedLanguage = language.charAt(0).toUpperCase() + language.slice(1);
     languagesSelect.innerHTML += `<option value="${language}">${capitalizedLanguage}</option>`;
   });
-}
-
-/**
- * Load recent projects
- */
-async function loadRecentProjects() {
-  const recentProjectsContainer = document.querySelector('.recent-projects');
-  if (recentProjectsContainer) {
-    const data = await projectApi.get();
-    const projects = data.projects;
-    const recentProjects = projects.slice(-3);
-    recentProjects.forEach(project => {
-      const projectElement = document.createElement('a');
-      projectElement.href = `project.html?id=${project.id}`;
-      projectElement.className = 'relative overflow-hidden rounded-lg shadow-light-default sm:h-64 lg:h-96';
-      projectElement.innerHTML = `
-        <img src="../${project.image}" alt="${project.title}" class="h-full w-full object-cover" />
-        <div class="absolute inset-0 bg-red-pink-300 opacity-25"></div>
-      `;
-      recentProjectsContainer.appendChild(projectElement);
-    });
-  }
 }
