@@ -1,6 +1,6 @@
-import { ProjectApi } from './../api/api.js';
+import { ProjectApi } from '../api/api.js';
 
-const projectApi = new ProjectApi('./../src/data/projects.json');
+const projectApi = new ProjectApi('../src/data/projects.json');
 
 export async function loadSliderImages() {
     const sliderContainer = document.querySelector('#slider');
@@ -21,7 +21,7 @@ export async function loadSliderImages() {
         sliderContainer.innerHTML = `
             <img src="${images[totalSlides - 1]}" class="w-full h-full object-cover flex-shrink-0" alt="Clone Last Image"/>
             ${images.map((image, index) => `
-                <img src="/${image}" alt="Slide ${index + 1}" class="w-full h-full object-cover flex-shrink-0" />
+                <img src="../${image}" alt="Slide ${index + 1}" class="w-full h-full object-cover flex-shrink-0" />
             `).join('')}
             <img src="${images[0]}" class="w-full h-full object-cover flex-shrink-0" alt="Clone First Image"/>
         `;

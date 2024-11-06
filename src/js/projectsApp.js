@@ -1,7 +1,7 @@
 import { ProjectApi } from './api/api.js';
 import { loadSliderImages } from './utils/slider.js';
 
-const projectApi = new ProjectApi('./../src/data/projects.json');
+const projectApi = new ProjectApi('../src/data/projects.json');
 let currentPage = 1;
 const projectsPerPage = 8;
 let currentSort = 'recent';
